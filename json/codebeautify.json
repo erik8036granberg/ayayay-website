@@ -1,0 +1,163 @@
+﻿[
+	{
+		"id": "1",
+		"titel": "Frisk hjemmelavet suppe",
+		"kortbeskrivelse": "Spørg tjeneren om dagens suppe.",
+		"langbeskrivelse": "Vores suppe ændres hver uge",
+		"pris": " spørg tjeneren om dagens suppe",
+		"oprindelsesregion": "79",
+		"billede": "Varierer"
+	},
+	{
+		"id": "2",
+		"titel": "Tortilla Chips & salsa",
+		"kortbeskrivelse": "Sprøde majstortillas med salsa & guacamole.",
+		"langbeskrivelse": "Hjemmelavede",
+		"pris": " sprøde majstortillas serveres med hjemmelavet salsa & guacamole.",
+		"oprindelsesregion": "64",
+		"billede": "Norteno"
+	},
+	{
+		"id": "3",
+		"titel": "Nachos med salsa & pork",
+		"kortbeskrivelse": "Sprøde tortilla med kødstrimler og tilbehør.",
+		"langbeskrivelse": "Sprøde tortilla chips",
+		"pris": " gratineret med cheddar ost og jalapenos",
+		"oprindelsesregion": " serveres med hjemmelavet salsa og lækre kødstrimler"
+	},
+	{
+		"id": "",
+		"titel": "79",
+		"kortbeskrivelse": "Norteno",
+		"langbeskrivelse": "003-nachos-med-salsa-pork"
+	},
+	{
+		"id": "4",
+		"titel": "Mexicansk rejecocktail",
+		"kortbeskrivelse": "Lækre kæmperejer",
+		"langbeskrivelse": " med mango salsa",
+		"pris": " og friterede nachos.",
+		"oprindelsesregion": "Lækre kæmperejer",
+		"billede": " hjemmelavet mango salsa"
+	},
+	{
+		"id": "5",
+		"titel": "Grillede kæmperejer",
+		"kortbeskrivelse": "Grillede chili- lime marinerede rejer med salat.",
+		"langbeskrivelse": "Grillede chili- lime marinerede kæmperejer flamberet med hvidvin",
+		"pris": " anrettet på sprød salat.",
+		"oprindelsesregion": "99",
+		"billede": "Yucateco"
+	},
+	{
+		"id": "101",
+		"titel": "Pollo picante",
+		"kortbeskrivelse": "Krydret kyllingebryst",
+		"langbeskrivelse": " med tortillas",
+		"pris": " mango & tilbehør.",
+		"oprindelsesregion": "Mexicansk krydrede kyllingebryst",
+		"billede": " ca. 200 g."
+	},
+	{
+		"id": "102",
+		"titel": "Burrito",
+		"kortbeskrivelse": "Lækre tortilla med kylling/oksefilet",
+		"langbeskrivelse": " med ris og en krydret sauce.",
+		"pris": "Cheddar ost gratineret hvedemelstortilla fyldt med kylling/oksefilet",
+		"oprindelsesregion": " cheddar ost",
+		"billede": " jalapenos & bønner"
+	},
+	{
+		"id": "103",
+		"titel": "Chimichanga",
+		"kortbeskrivelse": "Indbagt tortilla med kylling/oksefilet",
+		"langbeskrivelse": " guacamole",
+		"pris": " og mexicansk ris.",
+		"oprindelsesregion": "Friteret & indbagt hvedemelstortilla fyldt med kylling/oksefilet",
+		"billede": "cheddarost"
+	},
+	{
+		"id": "104",
+		"titel": "Vegetar Enchiladas",
+		"kortbeskrivelse": "Gratineret tortillas med sauteerede grønsager med ris og enchiladasauce.",
+		"langbeskrivelse": "Gratineret majs tortillas fyldt med sauteerede artiskokker",
+		"pris": " skalotte løg",
+		"oprindelsesregion": " tomater",
+		"billede": " jalapenos og friske koriander i en fløde sauce"
+	},
+	{
+		"id": "105",
+		"titel": "Beef Enchiladas",
+		"kortbeskrivelse": "Tortillas med kylling/revet oksefile",
+		"langbeskrivelse": " cheddar ost",
+		"pris": " ris og enchiladasauce.",
+		"oprindelsesregion": "Majs tortillas fyldt med kylling/revet oksefilet og cheddar ost",
+		"billede": " gratineret i ovnen toppet med cheddarost og creme fraiche"
+	},
+	{
+		"id": "106",
+		"titel": "Husets salat",
+		"kortbeskrivelse": "Lækker kyllingebryst salat med oliven",
+		"langbeskrivelse": " tomater og jalapenos og tilbehør.",
+		"pris": "200 g. Marinerede kylling bryst",
+		"oprindelsesregion": " anrettet på sprød salat",
+		"billede": " med oliven"
+	},
+	{
+		"id": "107",
+		"titel": "Prawn Fajitas",
+		"kortbeskrivelse": "Marinerede kæmperejer med bl.a. guacamole",
+		"langbeskrivelse": " cremefraiche og tortillas.",
+		"pris": "Hvidløgs- lime marinerede kæmperejer",
+		"oprindelsesregion": " Black tiger",
+		"billede": " flamberet i hvidvin"
+	},
+	{
+		"id": "108",
+		"titel": "Beef Fajitas",
+		"kortbeskrivelse": "Rødvinsmarineret oksemørbrad med bl.a. guacamole",
+		"langbeskrivelse": " cremefraiche og tortillas.",
+		"pris": "Rødvinsmarineret oksemørbrad serveres med sauterede røde/grønne pebre",
+		"oprindelsesregion": " to forskellige løg",
+		"billede": "toppet med koriander"
+	},
+	{
+		"id": "109",
+		"titel": "Chilli con carne",
+		"kortbeskrivelse": "Oksekød med salsa",
+		"langbeskrivelse": " creme fraiche",
+		"pris": " ris",
+		"oprindelsesregion": " guacamole og grillede sweet potatoes.",
+		"billede": "Oksekød med salsa"
+	},
+	{
+		"id": "201",
+		"titel": "AYAYAY-special",
+		"kortbeskrivelse": "Friteret banan med vanilieis",
+		"langbeskrivelse": " dulche de leche",
+		"pris": " nødder",
+		"oprindelsesregion": " sukker og kanel.",
+		"billede": "Friteret banan drysset med nødder"
+	},
+	{
+		"id": "202",
+		"titel": "Mexikans is",
+		"kortbeskrivelse": "Cremet vanilie is",
+		"langbeskrivelse": " med tequila og kahlua",
+		"pris": " severes med frugter.",
+		"oprindelsesregion": "Cremet vanilie is",
+		"billede": " med tequila og kahlua"
+	},
+	{
+		"id": "203",
+		"titel": "Buñuelos",
+		"kortbeskrivelse": "Små lune",
+		"langbeskrivelse": " pandekager med vanilie is og sæsonens frugter.",
+		"pris": "Små lune",
+		"oprindelsesregion": " sprøde pandekager drysset med sukker og kanel",
+		"billede": " serveres med cremet vanilie is og sæsonens frugter."
+	},
+	{
+		"id": ""
+	}
+]
