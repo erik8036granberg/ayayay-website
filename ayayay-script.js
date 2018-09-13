@@ -5,9 +5,18 @@ function onLoad() {
 	function toggleMenu() {
 		document.querySelector(".burger").classList.toggle("change");
 		document.querySelector("nav").classList.toggle("show");
+		document.querySelector(".logo").classList.toggle("hide");
 	}
+
+	function closeMenu() {
+		document.querySelector(".burger").classList.remove("change");
+		document.querySelector("nav").classList.remove("show");
+		document.querySelector(".logo").classList.remove("hide");
+	}
+
 	document.querySelector(".burger").addEventListener("click", toggleMenu);
 	document.querySelector("ul").addEventListener("click", toggleMenu);
+	document.querySelector("ul").addEventListener("mouseleave", closeMenu);
 
 }
 //}
