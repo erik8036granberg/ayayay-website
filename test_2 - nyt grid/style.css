@@ -13,39 +13,45 @@
 			padding: 0;
 			font-size: 1.3rem;
 			font-family: 'Open Sans', sans-serif;
+			display: relative;
 		}
 
 		* {
 			box-sizing: border-box;
 		}
 
-		*:focus {
-			outline: none
-		}
+		/* remember to define focus styles! */
 
-		img {
-			width: 100%;
+		:focus {
+			outline: 0;
 		}
 
 		header {
+			height: 700px;
 			background-image: url(img/template/header_index.jpg);
 			background-size: cover;
 			background-position: bottom;
-			height: 650px;
 		}
 
-		header .container {
+		.darkwrapper {
 			background-color: rgba(0, 0, 0, 0.93);
-			height: 550px;
+			height: 50%;
 			display: grid;
-			grid-template-columns: minmax(10vw, auto) minmax(auto, 300px) minmax(10vw, auto);
+			grid-template-columns: 1fr minmax(auto, 300px) 1fr;
+			grid-template-columns: 1fr auto 1fr;
+			transition: height 1s;
+		}
+
+		.darkwrapper.high {
+			height: 100%;
 		}
 
 		.logo {
 			grid-column: 2 / span 1;
 			align-self: center;
-			padding: 0 0 40px;
+			padding: 0 0 20px;
 			opacity: 1;
+			transition: opacity 1s;
 		}
 
 		.logo.hide {
@@ -53,7 +59,7 @@
 			pointer-events: none;
 		}
 
-		/* navigation */
+		/* navigation-knap */
 
 		.nav-knap {
 			position: absolute;
@@ -62,6 +68,7 @@
 			height: auto;
 			line-height: 0;
 			padding: 25px;
+			z-index: 50;
 		}
 
 		.burger {
@@ -95,19 +102,25 @@
 		}
 
 		nav {
-			display: none;
+			position: absolute;
 			color: #fff;
+			width: 100vw;
+			opacity: 0;
+			transition: opacity 1s;
+			pointer-events: none;
 		}
 
 		nav.show {
-			display: block;
-			grid-column: 1 / span 3;
+			opacity: 1;
+			transition: opacity 1s;
+			pointer-events: all;
 		}
 
 		nav ul {
 			list-style: none;
 			margin: 100px 0 0;
 			padding: 0;
+			width: 100vw;
 		}
 
 		nav li {
@@ -120,6 +133,7 @@
 			padding: 20px;
 		}
 
+
 		nav li:hover {
 			color: #000;
 			background-color: #fff;
@@ -129,16 +143,55 @@
 			border-bottom: 1px solid #fff;
 		}
 
+		.container {
+			background-color: red;
+			margin: 0 auto;
+		}
+
+		section {
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
+			background-color: orange;
+		}
+
+		section .content {
+			background-color: yellow;
+			grid-column: 2 / span 1;
+		}
+
+		footer {
+			display: grid;
+			grid-template-columns: 1fr 2fr 1fr;
+			background-color: green;
+		}
+
+		img {
+			width: 100%;
+		}
+
+
+
+
+
 		/* media queries */
 
 		@media screen and (min-width: 480px) {}
 
-		@media screen and (min-width: 768px) {
 
-			.burger {
-				display: none;
+		@media screen and (min-width: 480px) and (orientation: landscape) {
+			nav ul {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+			nav li:nth-child(2n+1) {
+				border-right: 1px solid #fff;
+			}
+			nav li:nth-last-child(2) {
+				border-bottom: 1px solid #fff;
 			}
 		}
+
+		@media screen and (min-width: 768px) {}
 
 		@media screen and (min-width: 980px) {}
 
