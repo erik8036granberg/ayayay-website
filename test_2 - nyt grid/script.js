@@ -17,8 +17,8 @@ function onLoad() {
 	}
 
 	document.querySelector(".burger").addEventListener("click", toggleMenu);
-	document.querySelector("ul").addEventListener("click", toggleMenu);
-	document.querySelector("ul").addEventListener("mouseleave", closeMenu);
+	document.querySelector("nav ul").addEventListener("click", toggleMenu);
+	document.querySelector("nav ul").addEventListener("mouseleave", closeMenu);
 
 }
 //}
