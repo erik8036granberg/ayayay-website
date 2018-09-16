@@ -90,6 +90,11 @@
 			navMenu();
 		});
 
+		document.addEventListener("DOMContentLoaded", function (event) {
+			filterMenu();
+		});
+
+
 		//		nav-menu"
 
 		function navMenu() {
@@ -122,11 +127,6 @@
 		}
 
 
-
-		document.addEventListener("DOMContentLoaded", function (event) {
-			filterMenu();
-		});
-
 		//		filter-menu
 
 		function filterMenu() {
@@ -138,8 +138,20 @@
 				function showFilter() {
 					console.log("showFilter");
 					document.querySelector(".filter-darkwrapper").classList.add("show");
-
+					document.querySelector(".filter-knap").classList.add("show");
+					document.querySelector(".filter-burger").classList.add("filter-change");
 				}
-				document.querySelector(".filter-knap").addEventListener("click", showFilter);
+
+				function hideFilter() {
+					console.log("hideFilter");
+					document.querySelector(".filter-darkwrapper").classList.remove("show");
+					document.querySelector(".filter-knap").classList.remove("show");
+					document.querySelector(".filter-burger").classList.remove("filter-change");
+				}
+
+				document.querySelector(".filter-menu-knap").addEventListener("click", showFilter);
+				document.querySelector(".filter-burger").addEventListener("click", hideFilter);
+				document.querySelector(".filter-darkwrapper ul").addEventListener("click", hideFilter);
+				document.querySelector(".filter-darkwrapper ul").addEventListener("mouseleave", hideFilter);
 			}
 		}
