@@ -32,7 +32,7 @@
 		};
 
 		//		eventlistner for knapper, som sætter civilFilter til dey valgte
-		document.querySelectorAll(".filter-menu").forEach(knap => {
+		document.querySelectorAll(".menu-knap").forEach(knap => {
 
 			knap.addEventListener("click", filtrering)
 		});
