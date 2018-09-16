@@ -24,15 +24,15 @@
 			<img class="icon" src="img/template/instagram-icon.svg" alt="Se os på Instagram">
 		</div>
 	</div>
-	<header>
+	<header id="forsiden">
 		<div class="darkwrapper">
 			<nav>
 				<ul>
-					<li>Forsiden</li>
-					<li>Menu</li>
-					<li>Book Bord</li>
-					<li>Find os</li>
-					<li>kontakt</li>
+					<li><a href="#forsiden">Forsiden</a></li>
+					<li><a href="#menu">Menu</a></li>
+					<li><a href="#">Book Bord</a></li>
+					<li><a href="#">Find os</a></li>
+					<li><a href="#kontakt">kontakt</a></li>
 				</ul>
 			</nav>
 
@@ -99,13 +99,13 @@
 				<div><img src="img/template/feature_menu.jpg" alt="Se vores menu">
 					<div class="linkbox">
 						<h2>Se vores menu</h2>
-						<button>Menu</button>
+						<span><button>Menu</button></span>
 					</div>
 				</div>
 				<div><img src="img/template/feature_bookbord.jpg" alt="Book bord">
 					<div class="linkbox">
 						<h2>Book et bord</h2>
-						<button>Book bord</button>
+						<span><button>Book bord</button></span>
 					</div>
 				</div>
 				<div><img src="img/template/feature_fairtrade.jpg" alt="Vi støtter fairtrade">
@@ -121,10 +121,13 @@
 				<div class="filter-menu-wrapper">
 					<h2>Menu - <span class="filter-header"></span></h2>
 					<div class="filter-menu">
-						<button class="menu-knap" data-kategori="alle">Alle Retter</button>
-						<button class="menu-knap" data-kategori="forret">Forretter</button>
-						<button class="menu-knap" data-kategori="hovedret">Hovedretter</button>
-						<button class="menu-knap" data-kategori="dessert">Desserter</button>
+						<div><button class="menu-knap" data-kategori="alle">Alle Retter</button></div>
+						<div><button class="menu-knap" data-kategori="forret">Forretter</button></div>
+						<div><button class="menu-knap" data-kategori="hovedret">Hovedretter</button></div>
+						<div><button class="menu-knap" data-kategori="dessert">Desserter</button></div>
+					</div>
+					<div class="filter-menu-mobile">
+						<div><button class="menu-filter-moblie" data-kategori="alle">Filtrér</button></div>
 					</div>
 				</div>
 				<div class="data-container"></div>
@@ -140,7 +143,7 @@
 		</article>
 		</template>
 	</main>
-	<footer>
+	<footer id="kontakt">
 		<div class="content">
 			<div>
 				<h3>Restaurant AYAYAY</h3>
@@ -177,8 +180,9 @@
 		</div>
 	</footer>
 
-	<!--	js-script©link -->
+	<!-- javascript -->
 	<script src="script.js"></script>
+
 </body>
 
 </html>

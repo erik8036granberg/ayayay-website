@@ -82,6 +82,7 @@
 				kategoriFilter += "er";
 			};
 
+			//		skriv filternavn i DOM
 			document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
 		}
 
@@ -103,6 +104,7 @@
 					document.querySelector("nav").classList.toggle("show");
 					document.querySelector(".logo").classList.toggle("hide");
 					document.querySelector(".darkwrapper").classList.toggle("high");
+					document.querySelector(".burger").classList.toggle("pulse");
 				}
 
 				function closeMenu() {
@@ -111,6 +113,7 @@
 					document.querySelector("nav").classList.remove("show");
 					document.querySelector(".logo").classList.remove("hide");
 					document.querySelector(".darkwrapper").classList.remove("high");
+					document.querySelector(".burger").classList.remove("pulse");
 				}
 				document.querySelector(".burger").addEventListener("click", toggleMenu);
 				document.querySelector("nav ul").addEventListener("click", toggleMenu);
