@@ -120,3 +120,26 @@
 				document.querySelector("nav ul").addEventListener("mouseleave", closeMenu);
 			}
 		}
+
+
+
+		document.addEventListener("DOMContentLoaded", function (event) {
+			filterMenu();
+		});
+
+		//		filter-menu
+
+		function filterMenu() {
+
+			console.log("filterMenu");
+
+			if (window.innerWidth <= 768) {
+
+				function showFilter() {
+					console.log("showFilter");
+					document.querySelector(".filter-darkwrapper").classList.add("show");
+
+				}
+				document.querySelector(".filter-knap").addEventListener("click", showFilter);
+			}
+		}
