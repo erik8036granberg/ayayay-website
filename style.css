@@ -9,6 +9,7 @@
 			--darkwrapper: rgba(0, 0, 0, 0.75);
 			--darkwrapper: rgba(22, 13, 9, 0.70);
 			--darkwrapper_hover: rgba(0, 0, 0, 0.93);
+			--om_bundfarve: rgba(255, 255, 255, 0.90);
 			--footer_rubrik: #fff;
 			--footer_afsnit: #8b8b8b;
 			--footer_bundfarve: rgba(0, 0, 0, 90);
@@ -25,6 +26,11 @@
 			font-family: 'Open Sans', sans-serif;
 			display: relative;
 			color: var(--fontfarve);
+			background-image: url(img/template/header_index_2.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
 		}
 
 		* {
@@ -41,15 +47,10 @@
 			outline: 0;
 		}
 
-
-
 		/* header */
 
 		header {
 			height: 700px;
-			background-image: url(img/template/header_index_2.jpg);
-			background-size: cover;
-			background-position: bottom;
 		}
 
 		.darkwrapper {
@@ -197,7 +198,8 @@
 		/*om section*/
 
 		#om {
-			background-image: url(img/template/om-baggrund.jpg);
+
+			background-color: var(--om_bundfarve);
 			background-size: 250%;
 			background-position: bottom;
 			background-repeat: no-repeat;
@@ -332,7 +334,6 @@
 		footer .content {
 			display: grid;
 			grid-template-columns: 1fr;
-			grid-gap: 20px;
 			padding: 3rem 3rem 5rem;
 		}
 
@@ -374,7 +375,7 @@
 
 		@media screen and (orientation: landscape) {
 
-			/*			header - nav */
+			/*	header - nav */
 			nav ul {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
@@ -393,7 +394,7 @@
 
 		@media screen and (min-width: 480px) and (orientation: landscape) {
 
-			/*			content-grid 480px landscape */
+			/*	content-grid 480px landscape */
 			#om .content {
 				padding: 4rem 4rem 6rem;
 			}
@@ -406,7 +407,7 @@
 				padding: 4rem 4rem 6rem;
 			}
 
-			/*			header - nav */
+			/*	header - nav */
 			nav ul {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
@@ -429,24 +430,25 @@
 				font-size: 1.6rem;
 			}
 
-			/*			content-grid 768px*/
+			/*	content-grid 768px*/
 			#om .content {
 				grid-template-columns: 2fr 1fr;
 				padding: 5rem 5rem 7rem;
 			}
 
 			#feature .content {
-				grid-template-columns: 2fr 1fr;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 30px;
 				padding: 5rem 5rem 7rem;
 			}
 
 			footer .content {
-				display: grid;
 				grid-template-columns: 1fr 1fr;
+				grid-gap: 30px;
 				padding: 5rem 5rem 7rem;
 			}
 
-			/*			header - nav*/
+			/*	header - nav*/
 			header {
 				height: 430px;
 			}
@@ -471,6 +473,7 @@
 				width: auto;
 				padding: 20px 30px 0 0;
 				pointer-events: all;
+				height: auto;
 			}
 
 			nav ul {
@@ -513,7 +516,7 @@
 				padding: 15px;
 			}
 
-			/*			sections*/
+			/*	om section*/
 			#om .om-tekst {
 				grid-column: 1 / span 1;
 			}
@@ -528,6 +531,15 @@
 			#om .om-billede {
 				right: 70px;
 			}
+
+			/*	feature section*/
+			#feature .linkbox {
+				padding: 3rem 0 3rem;
+			}
+
+			#feature .linkbox_tekst {
+				padding: 3rem 0 3rem;
+			}
 		}
 
 		/*
@@ -540,7 +552,7 @@
 				font-size: 1.6rem;
 			}
 
-			/*			content grid ved 980px */
+			/*	content grid ved 980px */
 			#om .content {
 				grid-template-columns: 1fr 1fr 1fr;
 			}
@@ -550,12 +562,11 @@
 			}
 
 			footer .content {
-				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
 				grid-gap: 20px;
 			}
 
-			/*			sections */
+			/*	sections */
 			#om {
 				background-size: 1280px auto;
 			}
@@ -596,7 +607,7 @@
 				line-height: 2rem;
 			}
 
-			/*			sidemargin 1024px */
+			/*	sidemargin 1024px */
 			section,
 			footer {
 				display: grid;
@@ -604,7 +615,7 @@
 				grid-gap: 30px;
 			}
 
-			/*			content grid 1024p */
+			/*	content grid 1024p */
 			section .content,
 			footer .content {
 				grid-column: 2 / span 1;
@@ -624,11 +635,15 @@
 
 		@media screen and (min-width: 1280px) {
 
-			/*			sidemargin 1280px */
+			/*	sidemargin 1280px */
 			section,
 			footer {
-				display: grid;
 				grid-template-columns: 1fr 1280px 1fr;
+			}
+
+			/*	header - nav*/
+			header {
+				height: 500px;
 			}
 
 			nav ul {
@@ -638,7 +653,7 @@
 				width: auto;
 			}
 
-			/*			sections */
+			/*	sections  */
 			#om {
 				background-size: 100%;
 				background-position: bottom;
