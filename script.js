@@ -15,7 +15,6 @@
 			let kategoriFilter = "alle";
 		};
 
-
 		//		dokument DOM loadet
 		document.addEventListener("DOMContentLoaded", hentJson);
 
@@ -49,7 +48,6 @@
 			console.log("visMenu");
 			//		Select modtager og template
 			let temp = document.querySelector(".data-template");
-			document.querySelector("#menu .content h2").textContent = kategoriFilter;
 
 			//		Kør loop med json-data
 			menu.forEach(menuitem => {
@@ -58,7 +56,6 @@
 
 					let klon = temp.cloneNode(true).content;
 
-					klon.querySelector(".data-id").textContent = menuitem.id;
 					klon.querySelector(".data-kategori").textContent = menuitem.kategori;
 					klon.querySelector("h3").textContent = menuitem.titel;
 					klon.querySelector(".data-kortbeskrivelse").textContent = menuitem.kortbeskrivelse;
@@ -73,6 +70,19 @@
 					console.log("loop er kørt");
 				}
 			})
+
+			//		check kategori og tilføj endelse
+			if (kategoriFilter == "alle") {
+				kategoriFilter += " retter";
+			} else if (kategoriFilter == "forret") {
+				kategoriFilter += "ter";
+			} else if (kategoriFilter == "hovedret") {
+				kategoriFilter += "ter";
+			} else {
+				kategoriFilter += "er";
+			};
+
+			document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
 		}
 
 		document.addEventListener("DOMContentLoaded", function (event) {

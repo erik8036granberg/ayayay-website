@@ -1,7 +1,7 @@
 ﻿[
 	{
 		"id": 1,
-		"kategori": "forretter",
+		"kategori": "forret",
 		"titel": "Frisk hjemmelavet suppe",
 		"kortbeskrivelse": "Spørg tjeneren om dagens suppe.",
 		"langbeskrivelse": "Vores suppe ændres hver uge, spørg tjeneren om dagens suppe",
@@ -11,7 +11,7 @@
   },
 	{
 		"id": 2,
-		"kategori": "forretter",
+		"kategori": "forret",
 		"titel": "Tortilla Chips & salsa",
 		"kortbeskrivelse": "Sprøde majstortillas med salsa & guacamole.",
 		"langbeskrivelse": "Hjemmelavede, sprøde majstortillas serveres med hjemmelavet salsa & guacamole.",
@@ -21,7 +21,7 @@
   },
 	{
 		"id": 3,
-		"kategori": "forretter",
+		"kategori": "forret",
 		"titel": "Nachos med salsa & pork",
 		"kortbeskrivelse": "Sprøde tortilla med kødstrimler og tilbehør.",
 		"langbeskrivelse": "Sprøde tortilla chips, gratineret med cheddar ost og jalapenos, serveres med hjemmelavet salsa og lækre kødstrimler",
@@ -31,7 +31,7 @@
   },
 	{
 		"id": 4,
-		"kategori": "forretter",
+		"kategori": "forret",
 		"titel": "Mexicansk rejecocktail",
 		"kortbeskrivelse": "Lækre kæmperejer, med mango salsa, og friterede nachos.",
 		"langbeskrivelse": "Lækre kæmperejer, hjemmelavet mango salsa, avocado og delikat chili-lime dressing. Friterede nachos som tilbehør.",
@@ -41,7 +41,7 @@
   },
 	{
 		"id": 5,
-		"kategori": "forretter",
+		"kategori": "forret",
 		"titel": "Grillede kæmperejer",
 		"kortbeskrivelse": "Grillede chili- lime marinerede rejer med salat.",
 		"langbeskrivelse": "Grillede chili- lime marinerede kæmperejer flamberet med hvidvin, anrettet på sprød salat.",
@@ -51,7 +51,7 @@
   },
 	{
 		"id": 101,
-		"kategori": "hovedretter",
+		"kategori": "hovedret",
 		"titel": "Pollo picante",
 		"kortbeskrivelse": "Krydret kyllingebryst, med tortillas, mango & tilbehør.",
 		"langbeskrivelse": "Mexicansk krydrede kyllingebryst, ca. 200 g., serveres med majs tortillas, mango salsa toppet med cheddarost, hjemmelavet salsa og guacamole, cremefraiche.",
@@ -61,7 +61,7 @@
   },
 	{
 		"id": 102,
-		"kategori": "hovedretter",
+		"kategori": "hovedret",
 		"titel": "Burrito",
 		"kortbeskrivelse": "Lækre tortilla med kylling/oksefilet, med ris og en krydret sauce.",
 		"langbeskrivelse": "Cheddar ost gratineret hvedemelstortilla fyldt med kylling/oksefilet, cheddar ost, jalapenos & bønner, topped med creme fraiche,hertil mexicansk ris og en krydret sauce.",
@@ -71,7 +71,7 @@
   },
 	{
 		"id": 103,
-		"kategori": "hovedretter",
+		"kategori": "hovedret",
 		"titel": "Chimichanga",
 		"kortbeskrivelse": "Indbagt tortilla med kylling/oksefilet, guacamole, og mexicansk ris.",
 		"langbeskrivelse": "Friteret & indbagt hvedemelstortilla fyldt med kylling/oksefilet,cheddarost, jalapenos & bønner, gratineret i ovnen, toppet med guacamole, hertil mexicansk ris, og krydret sauce.",
@@ -81,7 +81,7 @@
   },
 	{
 		"id": 104,
-		"kategori": "hovedretter",
+		"kategori": "hovedret",
 		"titel": "Vegetar Enchiladas",
 		"kortbeskrivelse": "Gratineret tortillas med sauteerede grønsager med ris og enchiladasauce.",
 		"langbeskrivelse": "Gratineret majs tortillas fyldt med sauteerede artiskokker, skalotte løg, tomater, jalapenos og friske koriander i en fløde sauce, serveres med mexicansk ris og enchiladasauce.",
@@ -91,7 +91,7 @@
   },
 	{
 		"id": 105,
-		"kategori": "hovedretter",
+		"kategori": "hovedret",
 		"titel": "Beef Enchiladas",
 		"kortbeskrivelse": "Tortillas med kylling/revet oksefile, cheddar ost, ris og enchiladasauce.",
 		"langbeskrivelse": "Majs tortillas fyldt med kylling/revet oksefilet og cheddar ost, gratineret i ovnen toppet med cheddarost og creme fraiche, serveres med mexicansk ris og enchilada sauce.",
@@ -101,7 +101,7 @@
   },
 	{
 		"id": 106,
-		"kategori": "hovedretter",
+		"kategori": "hovedret",
 		"titel": "Husets salat",
 		"kortbeskrivelse": "Lækker kyllingebryst salat med oliven, tomater og jalapenos og tilbehør.",
 		"langbeskrivelse": "200 g. Marinerede kylling bryst, anrettet på sprød salat, med oliven,tomater og jalapenos, toppet med cheddar ost, serveres med salsa og creme fraiche.",
@@ -111,7 +111,7 @@
   },
 	{
 		"id": 107,
-		"kategori": "hovedretter",
+		"kategori": "hovedret",
 		"titel": "Prawn Fajitas",
 		"kortbeskrivelse": "Marinerede kæmperejer med bl.a. guacamole, cremefraiche og tortillas.",
 		"langbeskrivelse": "Hvidløgs- lime marinerede kæmperejer, Black tiger, flamberet i hvidvin, sauteret med to forskellige løg, pebre frugter jalapenos, toppet med koriander, serveres med cheddar ost, salsa, guacamole, cremefraiche og hvedmelstortillas.",
@@ -121,7 +121,7 @@
   },
 	{
 		"id": 108,
-		"kategori": "hovedretter",
+		"kategori": "hovedret",
 		"titel": "Beef Fajitas",
 		"kortbeskrivelse": "Rødvinsmarineret oksemørbrad med bl.a. guacamole, cremefraiche og tortillas.",
 		"langbeskrivelse": "Rødvinsmarineret oksemørbrad serveres med sauterede røde/grønne pebre, to forskellige løg,toppet med koriander, serveres med cheddar ost, hvedemelstortilla, salsa, guacamole & creme fraiche.",
@@ -131,7 +131,7 @@
   },
 	{
 		"id": 109,
-		"kategori": "hovedretter",
+		"kategori": "hovedret",
 		"titel": "Chilli con carne",
 		"kortbeskrivelse": "Oksekød med salsa, creme fraiche, ris, guacamole og grillede sweet potatoes.",
 		"langbeskrivelse": "Oksekød med salsa, creme fraiche, ris, guacamole og grillede sweet potatoes.",
@@ -141,7 +141,7 @@
   },
 	{
 		"id": 201,
-		"kategori": "desserter",
+		"kategori": "dessert",
 		"titel": "AYAYAY-special",
 		"kortbeskrivelse": "Friteret banan med vanilieis, dulche de leche, nødder, sukker og kanel.",
 		"langbeskrivelse": "Friteret banan drysset med nødder, sukker og kanel, dryppet med dulche de leche, severes med lækker vanilieis.",
@@ -151,7 +151,7 @@
   },
 	{
 		"id": 202,
-		"kategori": "desserter",
+		"kategori": "dessert",
 		"titel": "Mexikans is",
 		"kortbeskrivelse": "Cremet vanilie is, med tequila og kahlua, severes med frugter.",
 		"langbeskrivelse": "Cremet vanilie is, med tequila og kahlua, severes med frugter.",
@@ -161,7 +161,7 @@
   },
 	{
 		"id": 203,
-		"kategori": "desserter",
+		"kategori": "dessert",
 		"titel": "Buñuelos",
 		"kortbeskrivelse": "Små lune, pandekager med vanilie is og sæsonens frugter.",
 		"langbeskrivelse": "Små lune, sprøde pandekager drysset med sukker og kanel, serveres med cremet vanilie is og sæsonens frugter.",
