@@ -139,19 +139,21 @@
 					console.log("showFilter");
 					document.querySelector(".filter-darkwrapper").classList.add("show");
 					document.querySelector(".filter-knap").classList.add("show");
-					document.querySelector(".filter-burger").classList.add("filter-change");
+					document.querySelector(".filter-darkwrapper .burger").classList.add("change");
+					document.querySelector(".filter-darkwrapper .burger").classList.add("pulse");
 				}
 
 				function hideFilter() {
 					console.log("hideFilter");
 					document.querySelector(".filter-darkwrapper").classList.remove("show");
 					document.querySelector(".filter-knap").classList.remove("show");
-					document.querySelector(".filter-burger").classList.remove("filter-change");
+					document.querySelector(".filter-darkwrapper .burger").classList.remove("change");
+					document.querySelector(".filter-darkwrapper .burger").classList.remove("pulse");
 				}
 
 				document.querySelector(".filter-menu-knap").addEventListener("click", showFilter);
-				document.querySelector(".filter-burger").addEventListener("click", hideFilter);
 				document.querySelector(".filter-darkwrapper ul").addEventListener("click", hideFilter);
 				document.querySelector(".filter-darkwrapper ul").addEventListener("mouseleave", hideFilter);
+				document.querySelector(".filter-darkwrapper .burger").addEventListener("click", hideFilter);
 			}
 		}
