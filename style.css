@@ -414,6 +414,21 @@
 			white-space: nowrap;
 		}
 
+		#menu button {
+			background-color: var(--logofarve);
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 7px 10px 7px;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+
+		#menu button:hover {
+			background-color: var(--footer_bundfarve);
+			transition: 1s;
+		}
+
 		#menu article {
 			padding: 20px;
 		}
@@ -523,37 +538,22 @@
 			pointer-events: all;
 		}
 
-		.filter-burger {
-			cursor: pointer;
-			background: transparent;
-			border: none;
+		/*bookbord section*/
+
+		#bookbord {
+			background-color: #6a390c;
+			color: #fff;
+			height: 300px;
 		}
 
-		.filter-bar1,
-		.filter-bar2,
-		.filter-bar3 {
-			width: 35px;
-			height: 3px;
-			margin: 9px 0;
-			transition: 0.4s;
-			box-shadow: 1px 1px 10px #000, 1px 1px 10px #ccc;
-		}
+		/*bookbord content-grid*/
 
-		.filter-change .filter-bar1 {
-			-webkit-transform: rotate(-45deg) translate(-9px, 9px);
-			transform: rotate(-45deg) translate(-9px, 9px);
+		#bookbord .content {
+			display: grid;
+			grid-template-columns: 1fr;
+			line-height: 0;
+			padding: 0 0 0;
 		}
-
-		.filter-change filter-bar2 {
-			opacity: 0;
-		}
-
-		.filter-change filter-bar3 {
-			-webkit-transform: rotate(45deg) translate(-7px, -8px);
-			transform: rotate(45deg) translate(-7px, -8px);
-			box-shadow: 1px 1px 10px transparent, 1px 1px 10px transparent;
-		}
-
 
 		/* Footer */
 
@@ -620,6 +620,18 @@
 			nav li:nth-last-child(2) {
 				border-bottom: 1px solid #fff;
 			}
+
+			/*	filter-menu */
+			.filter-darkwrapper ul {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+			.filter-darkwrapper li:nth-child(2n+1) {
+				border-right: 1px solid #fff;
+			}
+			.filter-darkwrapper li:nth-last-child(2) {
+				border-bottom: 1px solid #fff;
+			}
 		}
 
 		/*
@@ -654,6 +666,18 @@
 				border-right: 1px solid #fff;
 			}
 			nav li:nth-last-child(2) {
+				border-bottom: 1px solid #fff;
+			}
+
+			/*	filter-menu */
+			.filter-darkwrapper ul {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+			.filter-darkwrapper li:nth-child(2n+1) {
+				border-right: 1px solid #fff;
+			}
+			.filter-darkwrapper li:nth-last-child(2) {
 				border-bottom: 1px solid #fff;
 			}
 		}
@@ -869,6 +893,10 @@
 				background-color: #ffdbb0;
 			}
 
+			#menu .filter-menu {
+				grid-template-columns: auto auto auto auto;
+			}
+
 			footer .content {
 				grid-template-columns: 1fr 1fr 1fr;
 				grid-gap: 20px;
@@ -898,7 +926,6 @@
 				position: relative;
 				margin: 50px 100px 0 0;
 			}
-
 		}
 
 		/*
