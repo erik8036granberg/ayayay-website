@@ -19,7 +19,7 @@ if (window.innerWidth <= 768) {
 		kategoriFilter = tilbagesortering;
 	} else {
 		let kategoriFilter = "alle";
-	};
+	}
 
 	//		dokument DOM loadet
 	document.addEventListener("DOMContentLoaded", hentJson);
@@ -86,7 +86,7 @@ if (window.innerWidth <= 768) {
 			kategoriFilter += "ter";
 		} else {
 			kategoriFilter += "er";
-		};
+		}
 
 		//		skriv filternavn i DOM
 		document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
@@ -222,7 +222,7 @@ if (window.innerWidth > 768) {
 				klon.querySelector("img").alt = menuitem.kortbeskrivelse;
 
 				//indsætter eventlistner på article-class
-				klon.querySelector("img").addEventListener("click", () => {
+				klon.querySelector(".menuitem").addEventListener("click", () => {
 					visModal(menuitem);
 				});
 
@@ -248,44 +248,30 @@ if (window.innerWidth > 768) {
 			kategoriFilter += "ter";
 		} else {
 			kategoriFilter += "er";
-		};
-
+		}
 		document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
 	}
 
-	//	//viser modal ved at skite i css (opasity), og starter skjulModal
-	//	function visModal(menuitemet) {
-	//		modal.classList.add("vis");
-	//		modal.querySelector("button").addEventListener("click", skjulModal);
-	//		document.querySelector("#modal").addEventListener("click", skjulModal);
-	//
-	//		//hent data fra indlæst "post"
-	//		modal.querySelector(".modal-navn").textContent = menuitemet.navn;
-	//		modal.querySelector("img").src = "imgs/large/" + menuitemet.billede + ".jpg";
-	//		modal.querySelector("img").alt = "Foto af " + menuitemet.billede;
-	//		modal.querySelector(".modal-langbeskrivelse").textContent = menuitemet.langbeskrivelse;
-	//		modal.querySelector(".modal-oprindelsesregion").innerHTML = "<span class='bold'>Oprindelsesregion:</span> " + menuitemet.oprindelsesregion;
-	//		modal.querySelector(".modal-pris").textContent = menuitemet.pris + ",-";
-	//
-	//		//udskift lang med kort beskrivelse hvis den mangler
-	//		if (menuitemet.langbeskrivelse == null) {
-	//			modal.querySelector(".modal-langbeskrivelse").textContent = menuitemet.kortbeskrivelse;
-	//		}
-	//
-	//		// skjul oprindelsesregion hvis den mangler
-	//		if (menuitemet.oprindelsesregion == null) {
-	//			modal.querySelector(".modal-oprindelsesregion").classList.add("skjul");
-	//		}
-	//	}
-	//
-	//	//skjuler modal ved slå css "vis" fra
-	//	function skjulModal() {
-	//		modal.classList.remove("vis");
-	//		modal.querySelector(".modal-oprindelsesregion").removeEventListener("click", skjulModal)
-	//	}
+	//viser modal ved at skite i css (opasity), og starter skjulModal
+	function visModal(menuitemet) {
+		modal.classList.add("vis");
+		modal.querySelector("button").addEventListener("click", skjulModal);
+		document.querySelector("#modal").addEventListener("click", skjulModal);
 
-	//skjul lang beskrivelse
+		//hent data fra indlæst "post"
+		modal.querySelector(".modal-navn").textContent = menuitemet.navn;
+		modal.querySelector("img").src = "img/large/" + menuitemet.billede + ".jpg";
+		modal.querySelector("img").alt = "Foto af " + menuitemet.billede;
+		modal.querySelector(".modal-langbeskrivelse").textContent = menuitemet.langbeskrivelse;
+		modal.querySelector(".modal-oprindelsesregion").innerHTML = "<span class='bold'>Oprindelsesregion:</span> " + menuitemet.oprindelsesregion;
+		modal.querySelector(".modal-pris").textContent = menuitemet.pris + ",-";
+	}
 
+	//skjuler modal ved slå css "vis" fra
+	function skjulModal() {
+		modal.classList.remove("vis");
+		modal.querySelector(".modal-oprindelsesregion").removeEventListener("click", skjulModal)
+	}
 
 	//	if window.innerWidth slut
 }

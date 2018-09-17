@@ -83,7 +83,7 @@
 			padding: 0 0 10%;
 			opacity: 1;
 			transition: opacity 1s;
-			z-index: 200;
+			z-index: 50;
 		}
 
 		.logo.hide {
@@ -107,6 +107,14 @@
 			max-width: 30px;
 			max-height: 30px;
 			margin: 10px 10px 0 0;
+		}
+
+		. skjul {
+			display: none;
+		}
+
+		#modal {
+			display: none
 		}
 
 
@@ -664,6 +672,42 @@
 */
 
 		@media screen and (min-width: 768px) {
+
+			#modal {
+				position: absolute;
+				display: block;
+				width: 100vw;
+				height: 100vh;
+				position: fixed;
+				background-color: rgba(0, 0, 0, 0.7);
+				text-align: center;
+				opacity: 0;
+				pointer-events: none;
+				transition: 0.5s;
+				z-index: 100;
+			}
+
+			#modal button {
+				width,
+				height: 3vw;
+			}
+
+			#modal.vis {
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			.skjul {
+				display: none;
+			}
+
+			#modal-content {
+				width: 70vw;
+				height: auto;
+				background-color: rgba(255, 255, 255, 1);
+				margin: auto;
+				padding: 1vw 3vw 3vw;
+			}
 
 			body {
 				font-size: 1.6rem;
