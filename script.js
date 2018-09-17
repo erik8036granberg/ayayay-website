@@ -77,17 +77,6 @@ if (window.innerWidth <= 768) {
 			}
 		})
 
-		//		check kategori og tilføj endelse
-		if (kategoriFilter == "alle") {
-			kategoriFilter += " retter";
-		} else if (kategoriFilter == "forret") {
-			kategoriFilter += "ter";
-		} else if (kategoriFilter == "hovedret") {
-			kategoriFilter += "ter";
-		} else {
-			kategoriFilter += "er";
-		}
-
 		//		skriv filternavn i DOM
 		document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
 	}
@@ -239,16 +228,6 @@ if (window.innerWidth > 768) {
 			}
 		})
 
-		//		check kategori og tilføj endelse
-		if (kategoriFilter == "alle") {
-			kategoriFilter += " retter";
-		} else if (kategoriFilter == "forret") {
-			kategoriFilter += "ter";
-		} else if (kategoriFilter == "hovedret") {
-			kategoriFilter += "ter";
-		} else {
-			kategoriFilter += "er";
-		}
 		document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
 	}
 
