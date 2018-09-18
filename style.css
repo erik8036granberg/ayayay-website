@@ -36,7 +36,7 @@
 			font-family: 'Open Sans', sans-serif;
 			display: relative;
 			color: var(--fontfarve);
-			background-image: url(img/template/bg_image_480.jpg);
+			background-image: url(img/template/bg_image_1280.jpg);
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
@@ -445,6 +445,24 @@
 			transition: 1s;
 		}
 
+		#feature a.links {
+			background-color: var(--logofarve);
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 4px 7px 4px;
+			text-transform: uppercase;
+			margin: 0;
+			font-weight: normal;
+			white-space: nowrap;
+		}
+
+		#feature a.links:hover {
+			color: var(--logograa_moerk);
+			background-color: #fff;
+			transition: 1s;
+		}
+
 		/*menu section*/
 
 		#menu {
@@ -708,10 +726,6 @@
 */
 
 		@media screen and (min-width: 480px) {
-
-			body {
-				background-image: url(img/template/bg_image_900.jpg);
-			}
 
 			#bookbord {
 				background-image: url(img/template/feature_bookbord_900.jpg);
@@ -1071,7 +1085,6 @@
 
 			body {
 				font-size: 1.6rem;
-				background-image: url(img/template/bg_image_1280.jpg);
 			}
 
 			/*	content grid ved 980px */
