@@ -67,7 +67,13 @@ if (window.innerWidth <= 768) {
 
 				let klon = temp.cloneNode(true).content;
 
-				klon.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
+				//check skærmbredde og vælg billedstørrelse
+				if (window.innerWidth <= 400) {
+					klon.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
+				} else if (window.innerWidth <= 800) {
+					klon.querySelector("img").src = "img/medium/" + menuitem.billede + "-md.jpg";
+				}
+
 				klon.querySelector("img").alt = menuitem.kortbeskrivelse;
 				klon.querySelector("img").addEventListener("click", () => {
 					window.location.href = "single.html?id=" + menuitem.id + "&tilbagesortering=" + kategoriFilter;
@@ -213,7 +219,7 @@ if (window.innerWidth > 768) {
 				//		klon til template
 				let klon = temp.cloneNode(true).content;
 
-				klon.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
+				klon.querySelector("img").src = "img/medium/" + menuitem.billede + "-md.jpg";
 				klon.querySelector("img").alt = menuitem.kortbeskrivelse;
 
 				//indsætter eventlistner på article-class
@@ -222,11 +228,9 @@ if (window.innerWidth > 768) {
 				});
 
 				klon.querySelector(".data-kategori").textContent = menuitem.kategori;
-				klon.querySelector("h3").textContent = menuitem.titel;
+				klon.querySelector("h3").textContent = menuitem.navn;
 				klon.querySelector(".data-kortbeskrivelse").textContent = menuitem.kortbeskrivelse;
 				klon.querySelector(".data-pris").textContent = menuitem.pris + ",-";
-				klon.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
-				klon.querySelector("img").alt = menuitem.kortbeskrivelse;
 
 				//	    tilføj html DOM
 				dest.appendChild(klon);
@@ -244,9 +248,9 @@ if (window.innerWidth > 768) {
 		document.querySelector("#modal").addEventListener("click", skjulModal);
 
 		//hent data fra indlæst "post"
-		modal.querySelector(".modal-navn").textContent = menuitemet.navn;
-		modal.querySelector("img").src = "img/large/" + menuitemet.billede + ".jpg";
+		modal.querySelector("img").src = "img/medium/" + menuitemet.billede + "-md.jpg";
 		modal.querySelector("img").alt = "Foto af " + menuitemet.billede;
+		modal.querySelector(".modal-navn").textContent = menuitemet.navn;
 		modal.querySelector(".modal-langbeskrivelse").textContent = menuitemet.langbeskrivelse;
 		modal.querySelector(".modal-oprindelsesregion").innerHTML = "<span class='bold'>Oprindelsesregion:</span> " + menuitemet.oprindelsesregion;
 		modal.querySelector(".modal-pris").textContent = menuitemet.pris + ",-";

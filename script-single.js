@@ -234,7 +234,7 @@ if (window.innerWidth > 768) {
 				});
 
 				klon.querySelector(".data-kategori").textContent = menuitem.kategori;
-				klon.querySelector("h3").textContent = menuitem.titel;
+				klon.querySelector("h3").textContent = menuitem.navn;
 				klon.querySelector(".data-kortbeskrivelse").textContent = menuitem.kortbeskrivelse;
 				klon.querySelector(".data-pris").textContent = menuitem.pris + ",-";
 				klon.querySelector("img").src = "img/medium/" + menuitem.billede + "-sm.jpg";
