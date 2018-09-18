@@ -221,7 +221,7 @@ if (window.innerWidth > 768) {
 				});
 
 				klon.querySelector(".data-kategori").textContent = menuitem.kategori;
-				klon.querySelector("h3").textContent = menuitem.titel;
+				klon.querySelector("h3").textContent = menuitem.navn;
 				klon.querySelector(".data-kortbeskrivelse").textContent = menuitem.kortbeskrivelse;
 				klon.querySelector(".data-pris").textContent = menuitem.pris + ",-";
 				klon.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
@@ -234,6 +234,7 @@ if (window.innerWidth > 768) {
 		})
 
 		document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
+
 	}
 
 	//viser modal ved at skite i css (opasity), og starter skjulModal
@@ -243,6 +244,7 @@ if (window.innerWidth > 768) {
 		document.querySelector("#modal").addEventListener("click", skjulModal);
 
 		//hent data fra indlæst "post"
+		modal.querySelector(".modal-kategori").textContent = menuitemet.kategori;
 		modal.querySelector(".modal-navn").textContent = menuitemet.navn;
 		modal.querySelector("img").src = "img/large/" + menuitemet.billede + ".jpg";
 		modal.querySelector("img").alt = "Foto af " + menuitemet.billede;

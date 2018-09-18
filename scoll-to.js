@@ -3,9 +3,9 @@
 //https://codepen.io/rleve/pen/iCbgy
 
 
-//Scoll-animation fra link til #anchor på side: Her er et eksempel:
-
-//<a class="scroll" data-speed="2000" href="#bazinga">Bazinga</a> <a class="scroll" href="#booya">Booya</a>
+//Laver scoll-animation fra link til #. Her er et eksempel:
+//<a class="scroll" data-speed="2000" href="#hertil">Hertil</a>
+//data-speed er fart
 
 
 (function () {
@@ -51,10 +51,8 @@
 					}
 				};
 			}
-
 			// Loop the animation function
 			var runAnimation = setInterval(animateScroll, 16);
-
 		};
 
 		// Define smooth scroll links
@@ -79,11 +77,7 @@
 					// Scroll to the anchor
 					smoothScroll(dataTarget, dataSpeed || 500);
 				}
-
 			}, false);
-
 		});
-
 	}
-
 })();

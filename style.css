@@ -3,16 +3,26 @@
 		:root {
 			font-size: 62.5%;
 
-			/* farvevariabler */
+			/* hovedfarver */
 			--fontfarve: #222222;
 			--logofarve: #ea591d;
-			--darkwrapper: rgba(0, 0, 0, 0.75);
-			--darkwrapper: rgba(22, 13, 9, 0.70);
-			--darkwrapper_hover: rgba(0, 0, 0, 0.93);
-			--om_bundfarve: rgba(255, 255, 255, 0.90);
-			--footer_rubrik: #fff;
-			--footer_afsnit: #8b8b8b;
-			--footer_bundfarve: rgba(0, 0, 0, 90);
+
+			--logograa: rgba(0, 0, 0, 0.75);
+			--logograa: rgba(22, 13, 9, 0.70);
+			--logograa_moerk: rgba(0, 0, 0, 0.93);
+			--moerk_graa: #1a1a1a;
+			--lysebrun_bund: #ffe3c1;
+			--hvid-nedtonet: rgba(255, 255, 255, 0.90);
+			--rubrik_negativ: #fff;
+			--afsnit_negativ: #8b8b8b;
+
+			/* øvrige designfarver */
+			--designbrun: #c37c46;
+			--designgraa: #d6d6d6;
+			--designroedbrun: #d6d6d6;
+			--designlysbrun: #d7be6a;
+			--designgul: #f1c945;
+			--designgroen: #617f39;
 		}
 
 		/* generelt */
@@ -47,6 +57,18 @@
 			outline: 0;
 		}
 
+		h1 {
+			font-size: 3rem;
+		}
+
+		h2 {
+			font-size: 2.5rem;
+		}
+
+		h3 {
+			font-size: 2rem;
+		}
+
 		a,
 		a:link,
 		a:active,
@@ -58,11 +80,11 @@
 		}
 
 		a:hover {
-			color: #000;
+			color: var(--logograa_moerk);
 		}
 
 		a.dark:hover {
-			color: #fff;
+			color: var(--logograa_moerk);
 		}
 
 
@@ -77,7 +99,7 @@
 		}
 
 		.darkwrapper {
-			background-color: var(--darkwrapper);
+			background-color: var(--logograa);
 			width: 100%;
 			height: 55%;
 			display: grid;
@@ -89,14 +111,14 @@
 		}
 
 		.darkwrapper:hover {
-			background-color: var(--darkwrapper_hover);
+			background-color: var(--logograa_moerk);
 		}
 
 		.darkwrapper.high {
 			position: fixed;
 			width: 100vw;
 			height: 100vh;
-			background-color: var(--darkwrapper_hover);
+			background-color: var(--logograa_moerk);
 		}
 
 		.logo {
@@ -163,7 +185,6 @@
 		#modal {
 			display: none
 		}
-
 
 		/* navigation-knap */
 
@@ -282,7 +303,7 @@
 		}
 
 		nav li a:hover {
-			color: #000;
+			color: var(--logograa_moerk);
 			transition: 0.5s;
 			background-color: #fff;
 			transition: 0.5s;
@@ -295,7 +316,7 @@
 		/*om section*/
 
 		#om {
-			background-color: var(--om_bundfarve);
+			background-color: var(--hvid-nedtonet);
 			background-size: 250%;
 			background-position: bottom;
 			background-repeat: no-repeat;
@@ -367,7 +388,7 @@
 		/*feature section*/
 
 		#feature {
-			background-color: var(--footer_bundfarve);
+			background-color: var(--moerk_graa);
 			color: var(--footer_fontfarve);
 		}
 
@@ -390,7 +411,7 @@
 		}
 
 		#feature p {
-			color: var(--footer_afsnit);
+			color: var(--afsnit_negativ);
 			max-width: 90%;
 			margin: 1rem 0 0;
 		}
@@ -416,6 +437,12 @@
 			text-transform: uppercase;
 			margin: 0;
 			white-space: nowrap;
+		}
+
+		#feature button:hover {
+			color: var(--logograa_moerk);
+			background-color: #fff;
+			transition: 1s;
 		}
 
 		/*menu section*/
@@ -459,9 +486,6 @@
 
 		#menu .filter-menu {
 			display: none;
-			grid-template-columns: auto auto;
-			grid-template-columns: auto auto;
-			grid-gap: 10px;
 		}
 
 		#menu .filter-menu-mobile {
@@ -482,18 +506,8 @@
 			white-space: nowrap;
 		}
 
-		#menu button {
-			background-color: var(--logofarve);
-			color: #fff;
-			border: none;
-			border-radius: 5px;
-			padding: 7px 10px 7px;
-			text-transform: uppercase;
-			white-space: nowrap;
-		}
-
 		#menu button:hover {
-			background-color: var(--footer_bundfarve);
+			background-color: var(--logograa_moerk);
 			transition: 1s;
 		}
 
@@ -502,7 +516,7 @@
 		}
 
 		#menu article:nth-child(odd) {
-			background-color: #ffdbb0;
+			background-color: var(--lysebrun_bund);
 		}
 
 		#menu .data-kategori {
@@ -538,7 +552,7 @@
 		}
 
 		.filter-darkwrapper {
-			background-color: var(--darkwrapper_hover);
+			background-color: var(--logograa_moerk);
 			position: fixed;
 			opacity: 0;
 			Top: 0;
@@ -582,7 +596,7 @@
 		}
 
 		.filter-darkwrapper li a:hover {
-			color: #000;
+			color: var(--logograa_moerk);
 			transition: 0.5s;
 			background-color: #fff;
 			transition: 0.5s;
@@ -618,6 +632,10 @@
 			background-color: #6a390c;
 			color: #fff;
 			height: 300px;
+			background-image: url(img/template/feature_bookbord.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
 		}
 
 		/*bookbord content-grid*/
@@ -626,13 +644,13 @@
 			display: grid;
 			grid-template-columns: 1fr;
 			line-height: 0;
-			padding: 0 0 0;
+			padding: 3rem 3rem 5rem;
 		}
 
 		/* Footer */
 
 		footer {
-			background-color: var(--footer_bundfarve);
+			background-color: var(--moerk_graa);
 			color: var(--footer_fontfarve);
 		}
 
@@ -647,13 +665,13 @@
 		/* footer styles */
 
 		footer p {
-			color: var(--footer_afsnit);
+			color: var(--afsnit_negativ);
 			max-width: 90%;
 			margin: 0;
 		}
 
 		footer h3 {
-			color: var(--footer_rubrik);
+			color: var(--rubrik_negativ);
 		}
 
 		footer button {
@@ -706,6 +724,10 @@
 
 			#menu .content {
 				padding: 3rem 0 6rem;
+			}
+
+			#bookbord .content {
+				padding: 3rem 3rem 6rem;
 			}
 
 			footer .content {
@@ -766,6 +788,27 @@
 				pointer-events: none;
 				transition: 0.5s;
 				z-index: 100;
+				overflow: auto;
+			}
+
+			#modal {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			#modal.vis {
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			#modal-content {
+				max-width: 70vw;
+				background-color: rgba(255, 255, 255, 1);
+				margin: auto;
+				padding: 1vw 3vw 4vw;
+				text-align: left;
+				margin: 0 0 2vw;
 			}
 
 			#modal button {
@@ -777,23 +820,39 @@
 				text-transform: uppercase;
 				margin: 0;
 				white-space: nowrap;
+				margin: 1rem 0 2rem;
 			}
 
-			#modal.vis {
-				opacity: 1;
-				pointer-events: all;
+			#modal button:hover {
+				background-color: var(--logograa_moerk);
+				transition: 1s;
 			}
 
-			.skjul {
-				display: none;
+
+			#modal .modal-kategori {
+				text-transform: uppercase;
+				font-weight: bold;
+				color: var(--logofarve);
 			}
 
-			#modal-content {
-				width: 70vw;
-				height: auto;
-				background-color: rgba(255, 255, 255, 1);
-				margin: auto;
-				padding: 1vw 3vw 3vw;
+			#modal h3 {
+				font-size: 2rem;
+				margin: 0;
+			}
+
+			#modal h2 {
+				white-space: nowrap;
+			}
+
+			#modal p {
+				margin: 1rem 0 1rem;
+				max-width: 90%;
+				line-height: 2.2rem;
+			}
+
+			#modal .modal-pris {
+				font-size: 2.6rem;
+
 			}
 
 			body {
@@ -816,6 +875,7 @@
 				padding: 5rem 0 7rem;
 			}
 
+			/*	menu section */
 			#menu .filter-menu-wrapper {
 				display: flex;
 				justify-content: space-between;
@@ -843,8 +903,7 @@
 
 			#menu .filter-menu {
 				display: grid;
-				grid-template-columns: auto auto;
-				grid-template-columns: auto auto;
+				grid-template-columns: auto auto auto auto;
 				grid-gap: 10px;
 			}
 
@@ -1023,7 +1082,7 @@
 			}
 
 			#menu article:nth-child(odd) {
-				background-color: #ffdbb0;
+				background-color: var(--lysebrun_bund);
 			}
 
 			#menu .filter-menu {
@@ -1092,6 +1151,11 @@
 			#om .om-billede {
 				left: 30px;
 			}
+
+			/*	modal  */
+			#modal-content {
+				max-width: 60vw;
+			}
 		}
 
 		/*
@@ -1121,5 +1185,11 @@
 			/*	sections  */
 			#menu .content .data-container {
 				grid-template-columns: 1fr 1fr 1fr;
+			}
+
+			/*	modal  */
+			#modal-content {
+				max-width: 50vw;
+				margin: 0 0 0;
 			}
 		}
