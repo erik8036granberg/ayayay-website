@@ -1,5 +1,9 @@
 //		------------------------- Hvis vinduet er <= 768 px bredt  -------------------------
 
+//		------------------------- SINGLE PAGE  -------------------------
+//		------------------------- SINGLE PAGE  -------------------------
+//		------------------------- SINGLE PAGE  -------------------------
+
 
 
 if (window.innerWidth <= 768) {
@@ -12,14 +16,14 @@ if (window.innerWidth <= 768) {
 	//		globale værdier - katagoriFilter til "alle"
 	let menu;
 	let dest = document.querySelector(".data-container");
-	let kategoriFilter = "alle";
+	//	let kategoriFilter = "alle";
 
 	//		check for tilbagesortering og vælg denne
 	if (tilbagesortering != null) {
 		kategoriFilter = tilbagesortering;
 	} else {
-		let kategoriFilter = "alle";
-	}
+		kategoriFilter = "alle";
+	};
 
 	//		dokument DOM loadet
 	document.addEventListener("DOMContentLoaded", hentJson);
@@ -54,6 +58,7 @@ if (window.innerWidth <= 768) {
 		console.log("visMenu");
 		//		Select modtager og template
 		let temp = document.querySelector(".data-template");
+		document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
 
 		//		Kør loop med json-data
 		menu.forEach(menuitem => {
@@ -63,7 +68,7 @@ if (window.innerWidth <= 768) {
 				let klon = temp.cloneNode(true).content;
 
 				klon.querySelector(".data-kategori").textContent = menuitem.kategori;
-				klon.querySelector("h3").textContent = menuitem.titel;
+				klon.querySelector("h3").textContent = menuitem.navn;
 				klon.querySelector(".data-kortbeskrivelse").textContent = menuitem.kortbeskrivelse;
 				klon.querySelector(".data-pris").textContent = menuitem.pris + ",-";
 				klon.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
@@ -76,10 +81,10 @@ if (window.innerWidth <= 768) {
 				console.log("loop er kørt");
 			}
 		})
-
-		//		skriv filternavn i DOM
-		document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
 	}
+
+
+	//		nav-menu-mobile
 
 	document.addEventListener("DOMContentLoaded", function (event) {
 		navMenu();
@@ -89,8 +94,6 @@ if (window.innerWidth <= 768) {
 		filterMenu();
 	});
 
-
-	//		nav-menu-mobile
 
 	function navMenu() {
 
@@ -152,7 +155,9 @@ if (window.innerWidth <= 768) {
 
 
 //		------------------------- Hvis vinduet er > 768 px bredt  -------------------------
-
+//		------------------------- MODAL  -------------------------
+//		------------------------- MODAL  -------------------------
+//		------------------------- MODAL  -------------------------
 
 
 if (window.innerWidth > 768) {

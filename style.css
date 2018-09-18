@@ -47,10 +47,33 @@
 			outline: 0;
 		}
 
+		a,
+		a:link,
+		a:active,
+		a:visited {
+			color: var(--logofarve);
+			font-weight: bold;
+			transition: 0.5s;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #000;
+		}
+
+		a.dark:hover {
+			color: #fff;
+		}
+
+
 		/* header */
 
 		header {
 			height: 700px;
+		}
+
+		.single-page header {
+			height: 200px;
 		}
 
 		.darkwrapper {
@@ -80,7 +103,17 @@
 			grid-column: 2 / span 1;
 			grid-row: 2 / span 1;
 			align-self: center;
-			padding: 0 0 10%;
+			padding: 0 0 0;
+			opacity: 1;
+			transition: opacity 1s;
+			z-index: 50;
+		}
+
+		.single-page .logo {
+			grid-column: 2 / span 1;
+			grid-row: 2 / span 1;
+			align-self: center;
+			padding: 0 15% 0 0;
 			opacity: 1;
 			transition: opacity 1s;
 			z-index: 50;
@@ -379,6 +412,10 @@
 			padding: 3rem 0 5rem;
 		}
 
+		.single-page #menu .content {
+			padding: 0 0 0;
+		}
+
 		#menu .content .data-container {
 			display: grid;
 			grid-template-columns: 1fr;
@@ -473,6 +510,12 @@
 		#menu .data-pris {
 			font-size: 2.6rem;
 
+		}
+
+		.single-page .tilbage-wrapper {
+			display: flex;
+			justify-content: flex-start;
+			padding: 0 0 3rem;
 		}
 
 		.filter-darkwrapper {
@@ -673,6 +716,17 @@
 
 		@media screen and (min-width: 768px) {
 
+
+			.single-page .logo {
+				grid-column: 2 / span 1;
+				grid-row: 2 / span 1;
+				align-self: center;
+				padding: 0 0 0;
+				opacity: 1;
+				transition: opacity 1s;
+				z-index: 50;
+			}
+
 			#modal {
 				position: absolute;
 				display: block;
@@ -688,8 +742,14 @@
 			}
 
 			#modal button {
-				width,
-				height: 3vw;
+				background-color: var(--logofarve);
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				padding: 7px 10px 7px;
+				text-transform: uppercase;
+				margin: 0;
+				white-space: nowrap;
 			}
 
 			#modal.vis {
@@ -777,12 +837,26 @@
 				height: 430px;
 			}
 
+			.single-page header {
+				height: 430pxx;
+			}
+
 			.darkwrapper {
 				grid-template-columns: 1fr minmax(auto, 250px) 1fr;
 			}
 
 			.logo {
 				padding: 0 0 15px;
+			}
+
+			.single-page .logo {
+				grid-column: 2 / span 1;
+				grid-row: 2 / span 1;
+				align-self: center;
+				padding: 0 0 0;
+				opacity: 1;
+				transition: opacity 1s;
+				z-index: 50;
 			}
 
 			.burger {
