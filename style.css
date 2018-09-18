@@ -10,7 +10,7 @@
 			--logograa: rgba(0, 0, 0, 0.75);
 			--logograa: rgba(22, 13, 9, 0.70);
 			--logograa_moerk: rgba(0, 0, 0, 0.93);
-			--moerk_graa: #1a1a1a;
+			--moerk_graa: #0d0d0d;
 			--lysebrun_bund: #ffe3c1;
 			--hvid-nedtonet: rgba(255, 255, 255, 0.90);
 			--rubrik_negativ: #fff;
@@ -36,7 +36,7 @@
 			font-family: 'Open Sans', sans-serif;
 			display: relative;
 			color: var(--fontfarve);
-			background-image: url(img/template/header_index_2.jpg);
+			background-image: url(img/template/bg_image.jpg);
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
@@ -84,7 +84,7 @@
 		}
 
 		a.dark:hover {
-			color: var(--logograa_moerk);
+			color: #fff;
 		}
 
 
