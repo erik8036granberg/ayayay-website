@@ -36,7 +36,7 @@
 			font-family: 'Open Sans', sans-serif;
 			display: relative;
 			color: var(--fontfarve);
-			background-image: url(img/template/bg_image.jpg);
+			background-image: url(img/template/bg_image_480.jpg);
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
@@ -707,6 +707,18 @@
 - - - - - - - - - - - - - media queries - - - - - - - - - - - - -
 */
 
+		@media screen and (min-width: 480px) {
+
+			body {
+				background-image: url(img/template/bg_image_900.jpg);
+			}
+
+			#bookbord {
+				background-image: url(img/template/feature_bookbord_900.jpg);
+			}
+		}
+
+
 		/*
 - - - - - - - - - - - - - 480 landscape - - - - - - - - - - - - -
 */
@@ -1055,8 +1067,11 @@
 
 		@media screen and (min-width: 980px) {
 
+
+
 			body {
 				font-size: 1.6rem;
+				background-image: url(img/template/bg_image_1280.jpg);
 			}
 
 			/*	content grid ved 980px */
@@ -1118,6 +1133,10 @@
 				position: relative;
 				margin: 50px 100px 0 0;
 			}
+
+			#bookbord {
+				background-image: url(img/template/feature_bookbord_1280.jpg);
+			}
 		}
 
 		/*
@@ -1164,6 +1183,10 @@
 
 		@media screen and (min-width: 1280px) {
 
+			body {
+				background-image: url(img/template/bg_image_1600.jpg);
+			}
+
 			/*	sidemargin 1280px */
 			section,
 			footer {
@@ -1191,5 +1214,24 @@
 			#modal-content {
 				max-width: 50vw;
 				margin: 0 0 0;
+			}
+
+			#bookbord {
+				background-image: url(img/template/feature_bookbord_1600.jpg);
+			}
+		}
+
+		/*
+- - - - - - - - - - - - - 1920 - - - - - - - - - - - - -
+*/
+
+		@media screen and (min-width: 1600px) {
+
+			body {
+				background-image: url(img/template/bg_image_hd.jpg);
+			}
+
+			#bookbord {
+				background-image: url(img/template/feature_bookbord_hd.jpg);
 			}
 		}
