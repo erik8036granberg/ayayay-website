@@ -646,6 +646,14 @@
 			margin: 10px 0 0;
 		}
 
+		footer button:hover {
+			background-color: #a1a1a1;
+		}
+
+		footer img:hover {
+			opacity: 0.5;
+		}
+
 		footer .icon {
 			max-width: 30px;
 			max-height: 30px;

@@ -70,9 +70,6 @@ if (window.innerWidth <= 768) {
 				//indsæt data i klonen
 				dest.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
 				dest.querySelector("img").alt = menuitem.kortbeskrivelse;
-				dest.querySelector("img").addEventListener("click", () => {
-					window.location.href = "index.html?id=" + menuitem.id + "&tilbagesortering=" + kategoriFilter;
-				});
 				dest.querySelector("h3").textContent = menuitem.navn;
 				dest.querySelector(".data-langbeskrivelse").textContent = menuitem.langbeskrivelse;
 				dest.querySelector(".data-pris").textContent = menuitem.pris + ",-";
@@ -96,7 +93,7 @@ if (window.innerWidth <= 768) {
 	document.querySelector(".tilbage").addEventListener("click", gaaTilbage);
 
 	function gaaTilbage() {
-		window.location.href = "index.html?tilbagesortering=" + tilbagesortering;
+		javascript: history.go(-1);
 		console.log(tilbagesortering);
 	}
 
