@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+	<!--favicon-->
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -22,6 +23,7 @@
 </head>
 
 <body>
+	<!--burgermenu i højre hjørne (skjult i desktop)-->
 	<div class="nav-knap">
 		<button class="burger">
         <div class="bar1"></div>
@@ -35,8 +37,11 @@
 			<img class="icon" src="img/template/instagram-icon.svg" alt="Se os på Instagram">
 		</div>
 	</div>
+
+	<!--visning af stort billede & detaljer i modal-vindue (skjult før klik) -->
 	<section id="modal">
 		<div id="modal-content">
+			<!--		indhenter data om retter via loppet visModal -->
 			<button aria-label="Luk visning af ret">Luk</button>
 			<img class="" src="" alt="">
 			<p class="modal-kategori"></p>
@@ -48,6 +53,7 @@
 	</section>
 	<header id="forsiden">
 		<div class="darkwrapper">
+			<!--	nav-menu til mobile-filtrering - skjult i moblile view - kaldes via navMenu()-->
 			<nav>
 				<ul>
 					<li><a href="#om" class="scroll" data-speed="500">Forsiden</a></li>
@@ -56,7 +62,6 @@
 					<li><a href="#kontakt" class="scroll" data-speed="500">kontakt</a></li>
 				</ul>
 			</nav>
-
 			<div class="logo"><a href="#forsiden">
 				<img src="img/template/ayayay-logo_basic.svg" alt="AYAYAY - Modern mexican cuisine"></a></div>
 		</div>
@@ -77,6 +82,7 @@
 					<p>Vores misson er blive tidens mest nyskabende mexicanske restaurant.</p>
 				</div>
 
+				<!--	skjult i mobile view - hovedmenus "kontakt" går til footer med info	-->
 				<div class="om-kontakt">
 					<div>
 						<h3>Restaurant AYAYAY</h3>
@@ -99,27 +105,13 @@
 					<p class="om-citat-navn">Emmanuel Gonzales - Chefkok, AYAYAY</p>
 					<div class="om-citat-cymbol"></div>
 				</div>
-
-				<div class="om-kontakt">
-					<div>
-						<h3>Restaurant AYAYAY</h3>
-						<p>Adelgade 42</p>
-						<p>1304 København K.</p>
-						<p><a href="mailto:kontakt@ayayay.dk">kontakt@ayayay.dk</a></p>
-						<p>22 15 16 17</p>
-					</div>
-					<div>
-						<h3>Åbningstider</h3>
-						<p>Man - lør: 16.00 - 22.00</p>
-						<p>Søn : Lukket</p>
-					</div>
-				</div>
 		</section>
 		<section id="feature">
 			<div class="content">
 				<div><a href="#menu" class="scroll" data-speed="500"><img src="img/template/feature_menu_900.jpg" alt="Se vores menu"></a>
 					<div class="linkbox">
 						<h2>Se vores menu</h2>
+						<!--skjult i mobile view-->
 						<div class="billedtekst">
 							<p>Vi arbejde både med nye smagsvarianter og det traditionelle mexicanske køkken. Smag fx vores chimichanga, quesedillas, tacos, enchilladas og fajitas.</p>
 						</div>
@@ -129,6 +121,7 @@
 				<div><a href="#bookbord" class="scroll" data-speed="500"><img src="img/template/feature_bookbord_900.jpg" alt="Book bord"></a>
 					<div class="linkbox">
 						<h2>Book et bord</h2>
+						<!--skjult i mobile view-->
 						<div class="billedtekst">
 							<p>Vi har både et hyggeligt bord til 2, og plads til større selskaber. Hvis i bliver mere dne 10 personer, så ring venligt på 22 15 16 17.</p>
 						</div>
@@ -139,6 +132,7 @@
 					<div class="imagecut"><img src="img/template/feature_fairtrade_900.jpg" alt="Vi støtter fairtrade"></div>
 					<div class="linkbox_tekst">
 						<h2>vi støtter fairtrade!</h2>
+						<!--skjult i mobile view-->
 						<div class="billedtekst">
 							<p>Hos AYAYAY har det stor prioritet at alle råvarer bliver dyrket og transporteret bæredygtigt. Vi benytter kun leverandører, som er del af den internationale mærkningsordning.</p>
 						</div>
@@ -149,6 +143,8 @@
 		</section>
 		<section id="menu">
 			<div class="content">
+
+				<!--knapper til filtrering af retter - i mobile kunén knap, som åbner sorteringmenu som modal-->
 				<div class="filter-menu-wrapper">
 					<h2>Menu - <span class="filter-header"></span></h2>
 					<div class="filter-menu">
@@ -157,6 +153,7 @@
 						<div><button class="menu-knap" data-kategori="hovedretter" aria-label="Sortér efter hovedretter">Hovedretter</button></div>
 						<div><button class="menu-knap" data-kategori="desserter" aria-label="Sortér efter desserter">Desserter</button></div>
 					</div>
+					<!--Filterknap i mobile, som kalder filtrering-->
 					<div class="filter-menu-mobile">
 						<div><button class="filter-menu-knap">Filtrér</button></div>
 					</div>
@@ -164,12 +161,15 @@
 				<div class="data-container"></div>
 			</div>
 		</section>
+
+		<!--template til indsættelse af retter via loop (vises ikke i DOM)-->
 		<template class="data-template">
+		<!--indhenter data fra loopet visMenu() -->
 		<article class="menuitem">
 				<img src="" alt="">
-				 <p class="data-kategori"></p>
+				<p class="data-kategori"></p>
 				<h3></h3>
-				 <p class="data-kortbeskrivelse"></p>
+				<p class="data-kortbeskrivelse"></p>
 				<p class="data-pris"></p>
 		</article>
 		</template>
@@ -256,8 +256,9 @@
 		</div>
 	</footer>
 
+	<!--Filtreringsmenu - skjult - kaldes med filtrér-knap i menu-section via filterMenu()-->
 
-	<!--Filtreringsmenu - skjult - vises med klik på filtrér-knap i menu-section-->
+	<!--	burgermenu til mobile-filtrering-->
 	<div class="filter-darkwrapper">
 		<div class="filter-knap">
 			<button class="burger">
@@ -266,6 +267,7 @@
         <div class="bar3"></div>
     </button>
 		</div>
+		<!--	navmenu til mobile-filtrering-->
 		<ul>
 			<li><a href="javascript:void(0);" class="menu-knap" role="button" data-kategori="alle" aria-label="Vis alle retter">Alle Retter</a></li>
 			<li><a href="javascript:void(0);" class="menu-knap" role="button" data-kategori="forretter" aria-label="Sortér efter forretter">Forretter</a></li>
@@ -276,7 +278,7 @@
 
 	<!-- javascript -->
 	<script src="js/script.js"></script>
-	<!-- scoll-funktion til onepage-links -->
+	<!-- scoll-funktion til onepage-links - - - OBS: Brackets med live-visning i Crome kan give problemer -->
 	<script src="js/scoll-to.js"></script>
 </body>
 

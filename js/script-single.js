@@ -52,7 +52,7 @@ function visMenuItem() {
 	menu.forEach(menuitem => {
 		let dest = document.querySelector(".data-container");
 
-		//hvis id navn matcher, så udskriv
+		//hvis id navn matcher, så kør loop
 		if (menuitem.id == id) {
 
 			//indsæt data i klonen
@@ -87,9 +87,10 @@ function visMenuItem() {
 	})
 }
 
-
+//eventlistner for tilbageknap
 document.querySelector(".tilbage").addEventListener("click", gaaTilbage);
 
+//går tilbage til index med sortering som variabel
 function gaaTilbage() {
 	window.location.href = "index.html?tilbagesortering=" + tilbagesortering + "#menu";
 	console.log(tilbagesortering);

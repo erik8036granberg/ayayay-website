@@ -53,9 +53,10 @@ if (window.innerWidth <= 768) {
 		visMenu();
 	}
 
+	//	Behandler data indhentet fra JSON
 	function visMenu() {
 		console.log("visMenu");
-		//		Select modtager og template
+		//		vælg modtager div og template (html-struktur)
 		let temp = document.querySelector(".data-template");
 		document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
 
@@ -64,6 +65,7 @@ if (window.innerWidth <= 768) {
 			//viser valgt filter eller alle
 			if (menuitem.kategori == kategoriFilter || kategoriFilter == "alle") {
 
+				//				OK - klon
 				let klon = temp.cloneNode(true).content;
 
 				//check skærmbredde og vælg billedstørrelse
@@ -74,6 +76,8 @@ if (window.innerWidth <= 768) {
 				}
 
 				klon.querySelector("img").alt = "Foto af " + menuitem.billede;
+
+				//				indsær link til stort billede & detaljer - medsend variabel til sortering
 				klon.querySelector("img").addEventListener("click", () => {
 					window.location.href = "single.html?id=" + menuitem.id + "&tilbagesortering=" + kategoriFilter;
 				});
@@ -93,7 +97,7 @@ if (window.innerWidth <= 768) {
 	//		------------------------- MOBILE MENU  -------------------------
 
 
-	//		nav-menu-mobile
+	//		nav-menu-mobile - eventlisterns
 
 	document.addEventListener("DOMContentLoaded", function (event) {
 		navMenu();
@@ -103,6 +107,7 @@ if (window.innerWidth <= 768) {
 		filterMenu();
 	});
 
+	//	viser & skuler navigationsmenu via burger i hørje hjørne med css-classer
 
 	function navMenu() {
 
@@ -130,7 +135,7 @@ if (window.innerWidth <= 768) {
 		document.querySelector("nav ul").addEventListener("mouseleave", closeMenu);
 	}
 
-	//		filter-menu-mobile
+	//	viser & skjuler filtermenu i mobile view - åbner som modal-type
 
 	function filterMenu() {
 
@@ -204,9 +209,10 @@ if (window.innerWidth > 768) {
 		visMenu();
 	}
 
+	//	behandler data hentet ind fra JSON
 	function visMenu() {
 
-		//		Select modtager og template
+		//		vælg modtager div og template (html-struktur)
 		let temp = document.querySelector(".data-template");
 		console.log("visMenu");
 
@@ -238,6 +244,7 @@ if (window.innerWidth > 768) {
 			}
 		})
 
+		//		skriv sorteringoverskrift i DOM
 		document.querySelector("#menu .content .filter-header").textContent = kategoriFilter;
 	}
 
@@ -247,7 +254,7 @@ if (window.innerWidth > 768) {
 		modal.querySelector("button").addEventListener("click", skjulModal);
 		document.querySelector("#modal").addEventListener("click", skjulModal);
 
-		//hent data fra indlæst "post"
+		//indsær data fra JSON i modal-felterne
 		modal.querySelector("img").src = "img/medium/" + menuitemet.billede + "-md.jpg";
 		modal.querySelector("img").alt = "Foto af " + menuitemet.billede;
 		modal.querySelector(".modal-kategori").textContent = menuitemet.kategori;
@@ -271,6 +278,7 @@ document.querySelector("#valg_1").addEventListener("click", bookBordBesked);
 document.querySelector("#valg_2").addEventListener("click", bookBordBesked);
 document.querySelector("#valg_3").addEventListener("click", bookBordBesked);
 
+//skriver alert
 function bookBordBesked() {
 	alert("Onlinebooking af bord er desværre under ombygning!\n\nRing venligt på 22 15 16 17 istedet");
 }
