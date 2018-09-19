@@ -14,7 +14,7 @@ let kategoriFilter = "alle";
 if (tilbagesortering != null) {
 	kategoriFilter = tilbagesortering;
 } else {
-	let kategoriFilter = "alle";
+	kategoriFilter = "alle";
 };
 
 //		dokument DOM loadet

@@ -22,7 +22,7 @@ if (window.innerWidth <= 768) {
 		kategoriFilter = tilbagesortering;
 	} else {
 		kategoriFilter = "alle";
-	};
+	}
 
 	//		dokument DOM loadet
 	document.addEventListener("DOMContentLoaded", hentJson);
