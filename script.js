@@ -74,7 +74,7 @@ if (window.innerWidth <= 768) {
 					klon.querySelector("img").src = "img/medium/" + menuitem.billede + "-md.jpg";
 				}
 
-				klon.querySelector("img").alt = menuitem.kortbeskrivelse;
+				klon.querySelector("img").alt = "Foto af " + menuitem.billede;
 				klon.querySelector("img").addEventListener("click", () => {
 					window.location.href = "single.html?id=" + menuitem.id + "&tilbagesortering=" + kategoriFilter;
 				});
@@ -220,7 +220,7 @@ if (window.innerWidth > 768) {
 				let klon = temp.cloneNode(true).content;
 
 				klon.querySelector("img").src = "img/medium/" + menuitem.billede + "-md.jpg";
-				klon.querySelector("img").alt = menuitem.kortbeskrivelse;
+				klon.querySelector("img").alt = "Foto af " + menuitem.billede;
 
 				//indsætter eventlistner på article-class
 				klon.querySelector(".menuitem").addEventListener("click", () => {
@@ -250,6 +250,7 @@ if (window.innerWidth > 768) {
 		//hent data fra indlæst "post"
 		modal.querySelector("img").src = "img/medium/" + menuitemet.billede + "-md.jpg";
 		modal.querySelector("img").alt = "Foto af " + menuitemet.billede;
+		modal.querySelector(".modal-kategori").textContent = menuitemet.kategori;
 		modal.querySelector(".modal-navn").textContent = menuitemet.navn;
 		modal.querySelector(".modal-langbeskrivelse").textContent = menuitemet.langbeskrivelse;
 		modal.querySelector(".modal-oprindelsesregion").innerHTML = "<span class='bold'>Oprindelsesregion:</span> " + menuitemet.oprindelsesregion;
