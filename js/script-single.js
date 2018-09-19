@@ -15,7 +15,7 @@ if (tilbagesortering != null) {
 	kategoriFilter = tilbagesortering;
 } else {
 	kategoriFilter = "alle";
-};
+}
 
 //		dokument DOM loadet
 document.addEventListener("DOMContentLoaded", hentJson);

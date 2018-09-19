@@ -15,7 +15,7 @@ if (window.innerWidth <= 768) {
 	//		globale værdier - katagoriFilter til "alle"
 	let menu;
 	let dest = document.querySelector(".data-container");
-	//	let kategoriFilter = "alle";
+	let kategoriFilter = "alle";
 
 	//		check for tilbagesortering og vælg denne
 	if (tilbagesortering != null) {
@@ -23,6 +23,8 @@ if (window.innerWidth <= 768) {
 	} else {
 		kategoriFilter = "alle";
 	}
+
+	console.log(kategoriFilter);
 
 	//		dokument DOM loadet
 	document.addEventListener("DOMContentLoaded", hentJson);
