@@ -71,7 +71,7 @@
 						<h3>Restaurant AYAYAY</h3>
 						<p>Adelgade 42</p>
 						<p>1304 København K.</p>
-						<p>kontakt@ayayay.dk</p>
+						<p><a href="mailto:kontakt@ayayay.dk">kontakt@ayayay.dk</a></p>
 						<p>22 15 16 17</p>
 					</div>
 					<div>
@@ -94,7 +94,7 @@
 						<h3>Restaurant AYAYAY</h3>
 						<p>Adelgade 42</p>
 						<p>1304 København K.</p>
-						<p>kontakt@ayayay.dk</p>
+						<p><a href="mailto:kontakt@ayayay.dk">kontakt@ayayay.dk</a></p>
 						<p>22 15 16 17</p>
 					</div>
 					<div>
@@ -166,12 +166,38 @@
 			<div class="content">
 				<div class="brunbund">
 					<h2>Book et bord</h2>
-					<div class="valg">1. Antal personer</div>
-					<div class="valg">2. Vælg dato:</div>
-					<div class="valg">3. Vælg tid:</div>
-					<div class="valg">Book</div>
+					<div class="valg">
+						<div class="punkt">1. Antal personer</div>
+						<div class="punkt_valg" id="valg_1">
+							<div class="valg_knap">
+								<div class="valg_bestem">2</div>
+								<div class="valg_ruller"></div>
+							</div>
+						</div>
+					</div>
+					<div class="valg">
+						<div class="punkt">2. Vælg dato:</div>
+						<div class="punkt_valg" id="valg_2">
+							<div class="valg_knap">
+								<div class="valg_bestem">I dag</div>
+								<div class="valg_ruller"></div>
+							</div>
+						</div>
+					</div>
+					<div class="valg">
+						<div class="punkt">3. Vælg tid:</div>
+						<div class="punkt_valg" id="valg_3">
+							<div class="valg_knap">
+								<div class="valg_bestem">19:00</div>
+								<div class="valg_ruller"></div>
+							</div>
+						</div>
+					</div>
+					<div class="valg_do">
+						<div class="valg_do">Book</div>
+					</div>
 					<div class="info">
-						<p>Er i mere end 10 personer? - så kontakt os gerne på <span class="telefon">22 15 16 17</span> eller bookbord@ayayay.dk</p>
+						<p>Er i mere end 10 personer? - så kontakt os gerne på <span class="telefon">22 15 16 17</span> eller <a href="mailto:bookbord@ayayay.dk">bookbord@ayayay.dk</a></p>
 					</div>
 				</div>
 			</div>
@@ -183,7 +209,7 @@
 				<h3>Restaurant AYAYAY</h3>
 				<p>Adelgade 42</p>
 				<p>1304 København K.</p>
-				<p>kontakt@ayayay.dk</p>
+				<p><a href="mailto:kontakt@ayayay.dk">kontakt@ayayay.dk</a></p>
 				<p>22 15 16 17</p>
 			</div>
 			<div>
@@ -194,8 +220,8 @@
 			<div>
 				<h3>Bordbestilling</h3>
 				<p>22 15 16 17</p>
-				<p>bookbord@ayayay.dk</p>
-				<span><button onclick="window.location.href = '#bookbord';">Book bord</button></span>
+				<p><a href="mailto:bookbord@ayayay.dk">bookbord@ayayay.dk</a></p>
+				<p><a href="#bookbord" class="links scroll" data-speed="500">Bookbord</a></p>
 			</div>
 			<div>
 				<h3>Sociale medier</h3>
@@ -208,7 +234,12 @@
 			<div>
 				<h3>Om</h3>
 				<p>AYAYAY er den første mexicanske restaurant af sin art i Danmark. Vi skaber nye innovative udgaver af klassike retter, og tilfører det mexikanske køkken ny kraft og energi.</p>
-				<p class="copyright">AYAYAY 2018</p>
+				<p class="copyright"> &copy;AYAYAY
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+
+					</script>
+				</p>
 			</div>
 
 		</div>

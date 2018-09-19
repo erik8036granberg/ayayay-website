@@ -75,20 +75,15 @@
 		a:link,
 		a:active,
 		a:visited {
-			color: var(--logofarve);
-			font-weight: bold;
+			color: var(--logograa_moerk);
 			transition: 0.5s;
 			text-decoration: none;
 		}
 
 		a:hover {
-			color: var(--logograa_moerk);
+			color: var(--logofarve);
+			font-weight: bold;
 		}
-
-		a.dark:hover {
-			color: #fff;
-		}
-
 
 		/* header */
 
@@ -698,6 +693,22 @@
 			max-width: 90%;
 		}
 
+
+		#bookbord a,
+		#bookbord a:link,
+		#bookbord a:active,
+		#bookbord a:visited {
+			color: #fff;
+			font-weight: normal;
+			transition: 0.5s;
+			text-decoration: none;
+		}
+
+		#bookbord a:hover {
+			color: var(--logograa_moerk);
+			font-weight: bold;
+		}
+
 		#bookbord .valg {
 			font-style: italic;
 			font-size: 2rem;
@@ -712,6 +723,81 @@
 			white-space: nowrap;
 		}
 
+		#bookbord .valg {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		#bookbord .valg_knap {
+			display: flex;
+			justify-content: space-between;
+			font-size: 1.75rem;
+			font-style: normal;
+		}
+
+		#bookbord .valg_knap a:hover {
+			color: var(--logofarve);
+			font-weight: bold;
+		}
+
+		#bookbord .valg_bestem {
+			color: var(--brun_bund-nedtonet);
+			background-color: var(--rubrik_negativ);
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+			padding: 4px 20px 4px;
+		}
+
+		#bookbord .valg_ruller {
+			width: 20px;
+			color: var(--brun_bund-nedtonet);
+			background-color: var(--rubrik_negativ);
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+			padding: 4px 7px 4px;
+			background-image: url(img/template/pil_sort.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 50%;
+			margin: 0 0 0 5px;
+		}
+
+		#bookbord .punkt_valg:hover {
+			transform: scale(1.1);
+		}
+
+		#bookbord .punkt_valg:hover {
+			transform: scale(1.1);
+		}
+
+		#bookbord .valg_do {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		#bookbord .valg_book {
+			color: var(--brun_bund-nedtonet);
+			background-color: var(--rubrik_negativ);
+			border-radius: 8px;
+			padding: 4px 20px 4px;
+			opacity: 0.5;
+		}
+
+		/*
+		#bookbord .valg_knap a.links {
+			background-color: var(--rubrik_negativ);
+			color: var(--logograa_moerk);
+			border: none;
+			border-radius: 5px;
+			padding: 4px 7px 4px;
+			text-transform: uppercase;
+			font-weight: normal;
+			white-space: nowrap;
+			margin: 10rem 0 0;
+			line-height: 4rem;
+		}
+*/
+
 		/* Footer */
 
 		footer {
@@ -725,6 +811,7 @@
 			display: grid;
 			grid-template-columns: 1fr;
 			padding: 3rem 3rem 12rem;
+			line-height: normal;
 		}
 
 		/* footer styles */
@@ -732,20 +819,43 @@
 		footer p {
 			color: var(--afsnit_negativ);
 			max-width: 90%;
-			margin: 0;
+		}
+
+		footer a,
+		footer a:link,
+		footer a:active,
+		footer a:visited {
+			color: var(--afsnit_negativ);
+			transition: 0.5s;
+			text-decoration: none;
+			font-weight: normal;
+		}
+
+		footer a:hover {
+			color: var(--logofarve);
+			font-weight: bold;
 		}
 
 		footer h3 {
 			color: var(--rubrik_negativ);
 		}
 
-		footer button {
-			background-color: #fff;
+		footer a.links {
+			background-color: var(--rubrik_negativ);
+			color: var(--logograa_moerk);
 			border: none;
 			border-radius: 5px;
-			padding: 7px 10px 7px;
+			padding: 4px 7px 4px;
 			text-transform: uppercase;
-			margin: 10px 0 0;
+			font-weight: normal;
+			white-space: nowrap;
+			margin: 10rem 0 0;
+			line-height: 4rem;
+		}
+
+		footer a.links:hover {
+			background-color: var(--afsnit_negativ);
+			color: #000;
 		}
 
 		footer button:hover {
@@ -766,6 +876,7 @@
 			font-size: 70%;
 			margin: 20px 0 0;
 		}
+
 
 
 		/*
