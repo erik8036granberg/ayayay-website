@@ -265,3 +265,12 @@ if (window.innerWidth > 768) {
 
 	//	if window.innerWidth slut
 }
+
+//eventlisterns til book bord knapper
+document.querySelector("#valg_1").addEventListener("click", bookBordBesked);
+document.querySelector("#valg_2").addEventListener("click", bookBordBesked);
+document.querySelector("#valg_3").addEventListener("click", bookBordBesked);
+
+function bookBordBesked() {
+	alert("Onlinebooking af bord er desværre under ombygning!\n\nRing venligt på 22 15 16 17 istedet");
+}

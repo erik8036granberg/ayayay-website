@@ -71,6 +71,20 @@
 			font-size: 2rem;
 		}
 
+		a.darklink,
+		a.darklink:link,
+		a.darklink:active,
+		a.darklink:visited {
+			color: var(--logofarve);
+			transition: 0.5s;
+			text-decoration: none;
+		}
+
+		a.darklink:hover {
+			color: var(--rubrik_negativ);
+			font-weight: bold;
+		}
+
 		a,
 		a:link,
 		a:active,
@@ -775,7 +789,7 @@
 			justify-content: flex-end;
 		}
 
-		#bookbord .valg_book {
+		#bookbord #valg_book {
 			color: var(--brun_bund-nedtonet);
 			background-color: var(--rubrik_negativ);
 			border-radius: 8px;

@@ -8,6 +8,16 @@
 	<title>Velkommen til AYAYAY - Modern mexican cuisine</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+
 </head>
 
 <body class="single-page">
@@ -63,7 +73,7 @@
 				<h3>Restaurant AYAYAY</h3>
 				<p>Adelgade 42</p>
 				<p>1304 København K.</p>
-				<p>kontakt@ayayay.dk</p>
+				<p><a href="mailto:kontakt@ayayay.dk">kontakt@ayayay.dk</a></p>
 				<p>22 15 16 17</p>
 			</div>
 			<div>
@@ -74,8 +84,8 @@
 			<div>
 				<h3>Bordbestilling</h3>
 				<p>22 15 16 17</p>
-				<p>bookbord@ayayay.dk</p>
-				<button onclick="window.location.href = '#bookbord';">Book bord</button>
+				<p><a href="mailto:bookbord@ayayay.dk">bookbord@ayayay.dk</a></p>
+				<p><a href="index.html#bookbord" class="links">Book bord</a></p>
 			</div>
 			<div>
 				<h3>Sociale medier</h3>
@@ -88,7 +98,12 @@
 			<div>
 				<h3>Om</h3>
 				<p>AYAYAY er den første mexicanske restaurant af sin art i Danmark. Vi skaber nye innovative udgaver af klassike retter, og tilfører det mexikanske køkken ny kraft og energi.</p>
-				<p class="copyright">AYAYAY 2018</p>
+				<p class="copyright"> &copy;AYAYAY
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+
+					</script>
+				</p>
 			</div>
 
 		</div>
