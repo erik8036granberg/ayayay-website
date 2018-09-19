@@ -68,10 +68,10 @@ if (window.innerWidth <= 768) {
 				let klon = temp.cloneNode(true).content;
 
 				//check skærmbredde og vælg billedstørrelse
-				if (window.innerWidth <= 400) {
-					klon.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
-				} else if (window.innerWidth <= 800) {
+				if (window.innerWidth >= 400) {
 					klon.querySelector("img").src = "img/medium/" + menuitem.billede + "-md.jpg";
+				} else {
+					klon.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
 				}
 
 				klon.querySelector("img").alt = "Foto af " + menuitem.billede;

@@ -55,15 +55,13 @@ function visMenuItem() {
 		//hvis id navn matcher, så udskriv
 		if (menuitem.id == id) {
 
-
 			//indsæt data i klonen
 
-
 			//check skærmbredde og vælg billedstørrelse
-			if (window.innerWidth <= 400) {
-				dest.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
-			} else if (window.innerWidth <= 800) {
+			if (window.innerWidth >= 400) {
 				dest.querySelector("img").src = "img/medium/" + menuitem.billede + "-md.jpg";
+			} else {
+				dest.querySelector("img").src = "img/small/" + menuitem.billede + "-sm.jpg";
 			}
 
 			dest.querySelector("img").alt = menuitem.kortbeskrivelse;

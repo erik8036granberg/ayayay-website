@@ -26,7 +26,7 @@
 	</div>
 	<section id="modal">
 		<div id="modal-content">
-			<button>Luk</button>
+			<button aria-label="Luk visning af ret">Luk</button>
 			<img class="" src="" alt="">
 			<p class="modal-kategori"></p>
 			<h2 class="modal-navn"></h2>
@@ -131,10 +131,10 @@
 				<div class="filter-menu-wrapper">
 					<h2>Menu - <span class="filter-header"></span></h2>
 					<div class="filter-menu">
-						<div><button class="menu-knap" data-kategori="alle">Alle Retter</button></div>
-						<div><button class="menu-knap" data-kategori="forretter">Forretter</button></div>
-						<div><button class="menu-knap" data-kategori="hovedretter">Hovedretter</button></div>
-						<div><button class="menu-knap" data-kategori="desserter">Desserter</button></div>
+						<div><button class="menu-knap" data-kategori="alle" aria-label="Vis alle retter">Alle Retter</button></div>
+						<div><button class="menu-knap" data-kategori="forretter" aria-label="Sortér efter forretter">Forretter</button></div>
+						<div><button class="menu-knap" data-kategori="hovedretter" aria-label="Sortér efter hovedretter">Hovedretter</button></div>
+						<div><button class="menu-knap" data-kategori="desserter" aria-label="Sortér efter desserter">Desserter</button></div>
 					</div>
 					<div class="filter-menu-mobile">
 						<div><button class="filter-menu-knap">Filtrér</button></div>
@@ -196,6 +196,8 @@
 		</div>
 	</footer>
 
+
+	<!--Filtreringsmenu - skjult - vises med klik på filtrér-knap i menu-section-->
 	<div class="filter-darkwrapper">
 		<div class="filter-knap">
 			<button class="burger">
@@ -205,15 +207,16 @@
     </button>
 		</div>
 		<ul>
-			<li><a href="javascript:void(0);" class="menu-knap" data-kategori="alle">Alle Retter</a></li>
-			<li><a href="javascript:void(0);" class="menu-knap" data-kategori="forretter">Forretter</a></li>
-			<li><a href="javascript:void(0);" class="menu-knap" data-kategori="hovedretter">Hovedretter</a></li>
-			<li><a href="javascript:void(0);" class="menu-knap" data-kategori="desserter">Desserter</a></li>
+			<li><a href="javascript:void(0);" class="menu-knap" role="button" data-kategori="alle" aria-label="Vis alle retter">Alle Retter</a></li>
+			<li><a href="javascript:void(0);" class="menu-knap" role="button" data-kategori="forretter" aria-label="Sortér efter forretter">Forretter</a></li>
+			<li><a href="javascript:void(0);" class="menu-knap" role="button" data-kategori="hovedretter" aria-label="Sortér efter hovedretter">Hovedretter</a></li>
+			<li><a href="javascript:void(0);" class="menu-knap" role="button" data-kategori="desserter" aria-label="Sortér efter desserter">Desserter</a></li>
 		</ul>
 	</div>
 
 	<!-- javascript -->
 	<script src="script.js"></script>
+	<!-- scoll-funktion til onepage-links -->
 	<script src="scoll-to.js"></script>
 </body>
 
