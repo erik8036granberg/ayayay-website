@@ -12,9 +12,11 @@
 			--logograa_moerk: rgba(0, 0, 0, 0.93);
 			--moerk_graa: #0d0d0d;
 			--lysebrun_bund: #ffe3c1;
+			--brun_bund-nedtonet: rgba(106, 57, 12, 0.90);
 			--hvid-nedtonet: rgba(255, 255, 255, 0.90);
 			--rubrik_negativ: #fff;
 			--afsnit_negativ: #8b8b8b;
+
 
 			/* øvrige designfarver */
 			--designbrun: #c37c46;
@@ -450,7 +452,7 @@
 			border-radius: 5px;
 			padding: 4px 7px 4px;
 			text-transform: uppercase;
-			margin: 0;
+			margin: 0 0 0;
 			font-weight: normal;
 			white-space: nowrap;
 		}
@@ -459,6 +461,10 @@
 			color: var(--logograa_moerk);
 			background-color: #fff;
 			transition: 1s;
+		}
+
+		#feature .billedtekst {
+			display: none;
 		}
 
 		/*menu section*/
@@ -659,10 +665,9 @@
 		/*bookbord section*/
 
 		#bookbord {
-			background-color: #6a390c;
 			color: #fff;
-			height: 300px;
-			background-image: url(img/template/feature_bookbord_480.jpg);
+			height: auto;
+			background-image: url(img/template/feature_bookbord_900.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
@@ -673,8 +678,38 @@
 		#bookbord .content {
 			display: grid;
 			grid-template-columns: 1fr;
-			line-height: 0;
-			padding: 3rem 3rem 5rem;
+			padding: 2rem 2rem 4rem;
+			line-height: normal;
+		}
+
+		/* bookbord */
+
+		#bookbord .content .brunbund {
+			background-color: var(--brun_bund-nedtonet);
+			margin: 200px 0 0;
+			padding: 2rem 2rem 3rem;
+		}
+
+		#bookbord h2 {
+			margin: 0 auto 3rem;
+		}
+
+		#bookbord p {
+			max-width: 90%;
+		}
+
+		#bookbord .valg {
+			font-style: italic;
+			font-size: 2rem;
+			padding: 0 0 2rem;
+		}
+
+		#bookbord .info {
+			font-style: italic;
+		}
+
+		#bookbord .telefon {
+			white-space: nowrap;
 		}
 
 		/* Footer */
@@ -689,7 +724,7 @@
 		footer .content {
 			display: grid;
 			grid-template-columns: 1fr;
-			padding: 3rem 3rem 5rem;
+			padding: 3rem 3rem 12rem;
 		}
 
 		/* footer styles */
@@ -768,10 +803,6 @@
 				padding: 3rem 3rem 6rem;
 			}
 
-			footer .content {
-				padding: 3rem 4rem 6rem;
-			}
-
 			/*	header - nav */
 			nav ul {
 				display: grid;
@@ -803,6 +834,32 @@
 
 		@media screen and (min-width: 768px) {
 
+
+			body {
+				font-size: 1.6rem;
+			}
+
+			/*	content-grid 768px*/
+			#om .content {
+				grid-template-columns: 2fr 1fr;
+				padding: 5rem 5rem 7rem;
+			}
+
+			#feature .content {
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 30px;
+				padding: 5rem 5rem 7rem;
+			}
+
+			#menu .content {
+				padding: 5rem 0 7rem;
+			}
+
+			#bookbord .content {
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 30px;
+				padding: 5rem 5rem 7rem;
+			}
 
 			.single-page .logo {
 				grid-column: 2 / span 1;
@@ -893,26 +950,6 @@
 
 			}
 
-			body {
-				font-size: 1.6rem;
-			}
-
-			/*	content-grid 768px*/
-			#om .content {
-				grid-template-columns: 2fr 1fr;
-				padding: 5rem 5rem 7rem;
-			}
-
-			#feature .content {
-				grid-template-columns: 1fr 1fr;
-				grid-gap: 30px;
-				padding: 5rem 5rem 7rem;
-			}
-
-			#menu .content {
-				padding: 5rem 0 7rem;
-			}
-
 			/*	menu section */
 			#menu .filter-menu-wrapper {
 				display: flex;
@@ -958,7 +995,6 @@
 			footer .content {
 				grid-template-columns: 1fr 1fr;
 				grid-gap: 30px;
-				padding: 5rem 5rem 7rem;
 			}
 
 			/*	header - nav*/
@@ -1084,12 +1120,36 @@
 
 			/*	feature section*/
 			#feature .linkbox {
+				display: block;
 				padding: 3rem 0 3rem;
 			}
 
 			#feature .linkbox_tekst {
 				padding: 3rem 0 3rem;
 			}
+
+
+			#feature .billedtekst {
+				display: block;
+				margin: 0 0 2rem;
+			}
+
+			#feature .content .fairtrade {
+				grid-column: 1 / span 2;
+			}
+
+			#feature .content .imagecut {
+				min-height: 175px;
+				max-height: 235px;
+				overflow: hidden;
+			}
+
+			#bookbord .content .brunbund {
+				background-color: var(--brun_bund-nedtonet);
+				margin: 0 0 100px;
+				padding: 2rem 2rem 3rem;
+			}
+
 		}
 
 		/*
@@ -1152,6 +1212,9 @@
 			#om .om-billede {
 				left: 65px;
 				transform: none;
+				max-height: 475px;
+				left: 40px;
+
 			}
 
 			#om .om-kontakt {
@@ -1167,6 +1230,19 @@
 				line-height: 2.4rem;
 				position: relative;
 				margin: 50px 100px 0 0;
+				font-size: 2.25rem;
+				line-height: normal;
+				padding: 0 0 0 4rem;
+			}
+
+			#feature .content .fairtrade {
+				grid-column: 3 / span 1;
+			}
+
+			#feature .content .imagecut {
+				min-height: auto;
+				max-height: auto;
+				overflow: visible;
 			}
 
 			#bookbord {
@@ -1203,12 +1279,24 @@
 
 			/*			sections*/
 			#om .om-billede {
-				left: 30px;
+				max-height: 475px;
+				left: 40px;
+			}
+
+			#om .om-citat {
+				font-size: 2.25rem;
+				line-height: normal;
+				padding: 0 0 0 4rem;
 			}
 
 			/*	modal  */
 			#modal-content {
 				max-width: 60vw;
+			}
+
+			#bookbord .content .brunbund {
+
+				padding: 3rem 3rem 5rem;
 			}
 		}
 
@@ -1240,6 +1328,11 @@
 				width: auto;
 			}
 
+			#bookbord .content {
+				grid-template-columns: 1fr 1fr 1fr;
+
+			}
+
 			/*	sections  */
 			#menu .content .data-container {
 				grid-template-columns: 1fr 1fr 1fr;
@@ -1248,6 +1341,16 @@
 			.single-page #menu .content .data-container {
 				display: block;
 				grid-template-columns: 1fr;
+			}
+
+			#om .om-billede {
+				max-height: 475px;
+				left: 60px;
+			}
+
+			#om .om-citat {
+				font-size: 2.5rem;
+				line-height: normal;
 			}
 
 			/*	modal  */
@@ -1259,6 +1362,7 @@
 			#bookbord {
 				background-image: url(img/template/feature_bookbord_1600.jpg);
 			}
+
 		}
 
 		/*

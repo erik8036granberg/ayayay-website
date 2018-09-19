@@ -83,7 +83,6 @@ function visMenuItem() {
 			if (menuitem.oprindelsesregion == null) {
 				dest.querySelector(".data-oprindelsesregion").classList.add("skjul");
 			}
-
 		}
 	})
 }
