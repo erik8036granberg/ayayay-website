@@ -254,7 +254,7 @@ if (window.innerWidth > 768) {
 		modal.querySelector("button").addEventListener("click", skjulModal);
 		document.querySelector("#modal").addEventListener("click", skjulModal);
 
-		//indsær data fra JSON i modal-felterne
+		//indsæt data fra JSON i modal-felterne
 		modal.querySelector("img").src = "img/medium/" + menuitemet.billede + "-md.jpg";
 		modal.querySelector("img").alt = "Foto af " + menuitemet.billede;
 		modal.querySelector(".modal-kategori").textContent = menuitemet.kategori;

@@ -65,9 +65,6 @@ function visMenuItem() {
 			}
 
 			dest.querySelector("img").alt = menuitem.kortbeskrivelse;
-			dest.querySelector("img").addEventListener("click", () => {
-				window.location.href = "index.html?id=" + menuitem.id + "&tilbagesortering=" + kategoriFilter;
-			});
 			dest.querySelector(".data-kategori").textContent = menuitem.kategori;
 			dest.querySelector("h3").textContent = menuitem.navn;
 			dest.querySelector(".data-langbeskrivelse").textContent = menuitem.langbeskrivelse;
