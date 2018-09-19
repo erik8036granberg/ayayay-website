@@ -38,7 +38,7 @@
 			font-family: 'Open Sans', sans-serif;
 			display: relative;
 			color: var(--fontfarve);
-			background-image: url(img/template/bg_image_1280.jpg);
+			background-image: url(../img/template/bg_image_1280.jpg);
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
@@ -384,7 +384,7 @@
 			height: 50px;
 			top: -40px;
 			right: -40px;
-			background-image: url(img/template/citat-symbol.svg);
+			background-image: url(../img/template/citat-symbol.svg);
 			background-size: cover;
 		}
 
@@ -676,7 +676,7 @@
 		#bookbord {
 			color: #fff;
 			height: auto;
-			background-image: url(img/template/feature_bookbord_900.jpg);
+			background-image: url(../img/template/feature_bookbord_900.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
@@ -769,7 +769,7 @@
 			border-top-right-radius: 8px;
 			border-bottom-right-radius: 8px;
 			padding: 4px 7px 4px;
-			background-image: url(img/template/pil_sort.svg);
+			background-image: url(../img/template/pil_sort.svg);
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: 50%;
@@ -900,7 +900,7 @@
 		@media screen and (min-width: 480px) {
 
 			#bookbord {
-				background-image: url(img/template/feature_bookbord_900.jpg);
+				background-image: url(../img/template/feature_bookbord_900.jpg);
 			}
 		}
 
@@ -1371,7 +1371,7 @@
 			}
 
 			#bookbord {
-				background-image: url(img/template/feature_bookbord_1280.jpg);
+				background-image: url(../img/template/feature_bookbord_1280.jpg);
 			}
 		}
 
@@ -1432,7 +1432,7 @@
 		@media screen and (min-width: 1280px) {
 
 			body {
-				background-image: url(img/template/bg_image_1600.jpg);
+				background-image: url(../img/template/bg_image_1600.jpg);
 			}
 
 			/*	sidemargin 1280px */
@@ -1485,7 +1485,7 @@
 			}
 
 			#bookbord {
-				background-image: url(img/template/feature_bookbord_1600.jpg);
+				background-image: url(../img/template/feature_bookbord_1600.jpg);
 			}
 
 		}
@@ -1497,10 +1497,10 @@
 		@media screen and (min-width: 1600px) {
 
 			body {
-				background-image: url(img/template/bg_image_hd.jpg);
+				background-image: url(../img/template/bg_image_hd.jpg);
 			}
 
 			#bookbord {
-				background-image: url(img/template/feature_bookbord_hd.jpg);
+				background-image: url(../img/template/feature_bookbord_hd.jpg);
 			}
 		}
